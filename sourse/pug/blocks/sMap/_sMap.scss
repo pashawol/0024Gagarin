@@ -12,7 +12,7 @@
 			text-transform: uppercase;
 		}
 		&__map-wrap{
-			filter: saturate(0);
+			filter: saturate(.5) sepia(0.2);
 			//position: absolute;
 			left: 0;
 			position: relative;
