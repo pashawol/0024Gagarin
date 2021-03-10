@@ -9,7 +9,11 @@
 	@include media-breakpoint-up(xxl) {
 		--gutter: #{rem(38)};
 	}
+	@include media-breakpoint-up(lg) {
+
 	--gutter: #{rem(30)};
+	}
+	--gutter: #{rem(20)};
 
 	margin-left: calc(-1 * var(--gutter));
 	margin-right: calc(-1 * var(--gutter));

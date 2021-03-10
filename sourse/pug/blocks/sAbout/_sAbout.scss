@@ -9,7 +9,7 @@
 		position: relative;
 		z-index: 4;
 		picture{
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
 		}
 		.row{
 			@include media-breakpoint-up(xxl) {
@@ -19,12 +19,18 @@
 		 &:nth-child(even){
 			 flex-direction: row-reverse;
 		 }
+		 margin-bottom: rem(43);
+			@include media-breakpoint-up(lg) {
 		 margin-bottom: rem(123);
+
+
 		 &:nth-child(3){
 			 picture{
+
 				 margin-left: -100px;
 			 }
 		 }
+			}
 		}
 
 			&__lg {

@@ -1,5 +1,7 @@
 .top-nav {
-	position: fixed;
+	@include media-breakpoint-up(lg) {
+		position: fixed;
+	}
 	width: 100%;
 	top: 0;
 	left: 0;

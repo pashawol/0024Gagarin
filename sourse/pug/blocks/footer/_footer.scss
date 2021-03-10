@@ -2,16 +2,14 @@
 		
 	margin-top: auto;
 	//position: fixed;
-	position: sticky;
-	left: 0;
-	bottom: 0;
+
 	@include media-breakpoint-up(xxxl){
 
 	padding-top: rem(60);
-	padding-bottom: rem(60);
+	padding-bottom: rem(34);
 	}
 	padding-top: rem(30);
-	padding-bottom: rem(30);
+	padding-bottom: rem(20);
 	width: 100%;
 	z-index: 5;
 	.row{
@@ -21,12 +19,18 @@
 		}
 	}
 
-
+img{
+	margin-bottom: 2rem;
+}
 	
 // 
 @include media-breakpoint-up(xl) {}
 
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+	position: sticky;
+	left: 0;
+	bottom: 0;
+}
 
 @include media-breakpoint-up(md) {}
 

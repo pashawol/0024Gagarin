@@ -34,26 +34,18 @@
 		<!-- start top-nav-->
 		<div class="top-nav block-with-lazy">
 			<div class="container">
-				<div class="row">
-					<div class="col-auto d-lg-none">
-						<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
-						</div>
-					</div>
-					<div class="col d-none d-lg-block">
-						<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Первый</a></li>
-							<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Цены</a></li>
-							<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Выставка</a></li>
-							<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Где посмотреть</a></li>
-							<li class="menu-item menu-item-has-children"><a class="menu-link" href="#" itemprop="url">Ru</a>
-								<ul class="sub-menu">
-									<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Eng</a></li>
-									<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Ru</a></li>
-								</ul>
-							</li>
+				<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Первый</a></li>
+					<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Цены</a></li>
+					<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Выставка</a></li>
+					<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Где посмотреть</a></li>
+					<li class="menu-item menu-item-has-children"><a class="menu-link" href="#" itemprop="url">Ru</a>
+						<ul class="sub-menu">
+							<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Eng</a></li>
+							<li class="menu-item" itemprop="item"><a class="menu-link" href="#" itemprop="url">Ru</a></li>
 						</ul>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<!-- end top-nav-->
@@ -71,10 +63,10 @@
 					<div class="picture-block picture-block--1">
 						<!-- picture-->
 						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/picture-1.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@2x/webp/picture-1.webp" media="(min-width:992px)"/>
 							<source type="image/webp" srcset="img/@1x/webp/picture-1.webp"/>
-							<source type="image/jpg" srcset="img/@2x/picture-1.jpg" media="(min-width:576px)"/>
-							<source type="image/jpg" srcset="img/@1x/picture-1.jpg"/><img src="img/@2x/picture-1.jpg" alt="" loading="lazy" decoding="async"/>
+							<source type="image/jpg" srcset="img/@2x/picture-1.jpg" media="(min-width:992px)"/>
+							<source type="image/jpg" srcset="img/@1x/picture-1.jpg"/><img src="img/@2x/picture-1.jpg" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 						<div class="picture-block__caption">Ю. А. Гагарин
@@ -83,10 +75,10 @@
 					<div class="picture-block picture-block--2">
 						<!-- picture-->
 						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/picture-2.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@2x/webp/picture-2.webp" media="(min-width:992px)"/>
 							<source type="image/webp" srcset="img/@1x/webp/picture-2.webp"/>
-							<source type="image/jpg" srcset="img/@2x/picture-2.jpg" media="(min-width:576px)"/>
-							<source type="image/jpg" srcset="img/@1x/picture-2.jpg"/><img src="img/@2x/picture-2.jpg" alt="" loading="lazy" decoding="async"/>
+							<source type="image/jpg" srcset="img/@2x/picture-2.jpg" media="(min-width:992px)"/>
+							<source type="image/jpg" srcset="img/@1x/picture-2.jpg"/><img src="img/@2x/picture-2.jpg" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 						<div class="picture-block__caption">Ю. А. Гагарин и Эрнесто «Че» Гевара
@@ -98,7 +90,7 @@
 							<source type="image/webp" srcset="img/@2x/webp/picture-3.webp" media="(min-width:576px)"/>
 							<source type="image/webp" srcset="img/@1x/webp/picture-3.webp"/>
 							<source type="image/jpg" srcset="img/@2x/picture-3.jpg" media="(min-width:576px)"/>
-							<source type="image/jpg" srcset="img/@1x/picture-3.jpg"/><img src="img/@2x/picture-3.jpg" alt="" loading="lazy" decoding="async"/>
+							<source type="image/jpg" srcset="img/@1x/picture-3.jpg"/><img class="object-fit-js" src="img/@2x/picture-3.jpg" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 					</div>
@@ -112,7 +104,10 @@
 						<div class="col-xl-6">
 							<!-- picture-->
 							<picture> 
-								<source type="image/webp" srcset="img/@2x/webp/about-1.webp"/><img src="img/@2x/about-1.jpg" alt="" loading="lazy" decoding="async"/>
+								<source type="image/webp" srcset="img/@2x/webp/about-1.webp" media="(min-width:576px)"/>
+								<source type="image/webp" srcset="img/@1x/webp/about-1.webp"/>
+								<source type="image/jpg" srcset="img/@2x/about-1.jpg" media="(min-width:576px)"/>
+								<source type="image/jpg" srcset="img/@1x/about-1.jpg"/><img src="img/@2x/about-1.jpg" alt="" loading="lazy"/>
 							</picture>
 							<!-- /picture-->
 						</div>
@@ -124,7 +119,10 @@
 						<div class="col-xl-6">
 							<!-- picture-->
 							<picture> 
-								<source type="image/webp" srcset="img/@2x/webp/about-2.webp"/><img src="img/@2x/about-2.jpg" alt="" loading="lazy" decoding="async"/>
+								<source type="image/webp" srcset="img/@2x/webp/about-2.webp" media="(min-width:576px)"/>
+								<source type="image/webp" srcset="img/@1x/webp/about-2.webp"/>
+								<source type="image/jpg" srcset="img/@2x/about-2.jpg" media="(min-width:576px)"/>
+								<source type="image/jpg" srcset="img/@1x/about-2.jpg"/><img src="img/@2x/about-2.jpg" alt="" loading="lazy"/>
 							</picture>
 							<!-- /picture-->
 						</div>
@@ -136,7 +134,10 @@
 						<div class="col-xl-6">
 							<!-- picture-->
 							<picture> 
-								<source type="image/webp" srcset="img/@2x/webp/about-3.webp"/><img src="img/@2x/about-3.jpg" alt="" loading="lazy" decoding="async"/>
+								<source type="image/webp" srcset="img/@2x/webp/about-3.webp" media="(min-width:576px)"/>
+								<source type="image/webp" srcset="img/@1x/webp/about-3.webp"/>
+								<source type="image/jpg" srcset="img/@2x/about-3.jpg" media="(min-width:576px)"/>
+								<source type="image/jpg" srcset="img/@1x/about-3.jpg"/><img src="img/@2x/about-3.jpg" alt="" loading="lazy"/>
 							</picture>
 							<!-- /picture-->
 						</div>
@@ -165,7 +166,7 @@
 							<source type="image/webp" srcset="img/@2x/webp/online.webp" media="(min-width:576px)"/>
 							<source type="image/webp" srcset="img/@1x/webp/online.webp"/>
 							<source type="image/jpg" srcset="img/@2x/online.jpg" media="(min-width:576px)"/>
-							<source type="image/jpg" srcset="img/@1x/online.jpg"/><img class="object-fit-js" src="img/@2x/online.jpg" alt="" loading="lazy" decoding="async"/>
+							<source type="image/jpg" srcset="img/@1x/online.jpg"/><img class="object-fit-js" src="img/@2x/online.jpg" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 						<h2>ОНЛАЙН <br> ВЫСТАВКА</h2><a class="sOnline__link" href="#">Посетить выставку
@@ -194,28 +195,28 @@
 					<div class="col col-auto"> 
 						<!-- picture-->
 						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/logo-1.webp"/><img src="img/@2x/logo-1.png" alt="" loading="lazy" decoding="async"/>
+							<source type="image/webp" srcset="img/@2x/webp/logo-1.webp"/><img src="img/@2x/logo-1.png" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 					</div>
 					<div class="col col-auto"> 
 						<!-- picture-->
 						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/logo-2.webp"/><img src="img/@2x/logo-2.png" alt="" loading="lazy" decoding="async"/>
+							<source type="image/webp" srcset="img/@2x/webp/logo-2.webp"/><img src="img/@2x/logo-2.png" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 					</div>
 					<div class="col col-auto"> 
 						<!-- picture-->
 						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/logo-3.webp"/><img src="img/@2x/logo-3.png" alt="" loading="lazy" decoding="async"/>
+							<source type="image/webp" srcset="img/@2x/webp/logo-3.webp"/><img src="img/@2x/logo-3.png" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 					</div>
 					<div class="col col-auto"> 
 						<!-- picture-->
 						<picture> 
-							<source type="image/webp" srcset="img/@2x/webp/logo-4.webp"/><img src="img/@2x/logo-4.png" alt="" loading="lazy" decoding="async"/>
+							<source type="image/webp" srcset="img/@2x/webp/logo-4.webp"/><img src="img/@2x/logo-4.png" alt="" loading="lazy"/>
 						</picture>
 						<!-- /picture-->
 					</div>

@@ -39,7 +39,7 @@
 	}
 	&__block{
 		position: relative;
-		z-index: 2;
+		z-index: 4;
 	}
 	@include media-breakpoint-up(xl) {}
 
@@ -68,7 +68,13 @@
 .picture-block--1{
 	// top: 0;
 	top: 0;
-	width: rem(684);
+	@include media-breakpoint-down(sm) {
+		img{
+
+		opacity: .6;
+		}
+		background-color: #000000;
+	}
 
 		// top: 0;
 		// bottom: rem(-240);
@@ -76,7 +82,7 @@
 		z-index: 2;
 	}
 	.picture-block--2{
-		width: rem(880);
+
 		top: 0;
 		right: -80px;
 		transform-origin: top right;
