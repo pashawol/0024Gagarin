@@ -1,0 +1,44 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sOnline/_sOnline.pug
+include ../blocks/sMap/_sMap.pug
+
+block variables
+	- let  mainPage= null 
+	- let  bg= null
+
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	+top-nav()
+	.main-wrapper
+		+headerBlock()
+			+b.picture-block--1
+				+pic(`picture-1.jpg`,',0')
+				+e.caption Ю. А. Гагарин
+
+			+b.picture-block--2
+				+pic(`picture-2.jpg`,',0')
+				+e.caption Ю. А. Гагарин и Эрнесто «Че» Гевара
+			+b.picture-block--3
+				+pic(`picture-3.jpg`,',0')
+
+		+sAbout
+		#trigger1
+			.fixed-block
+				.container
+					p.mb-5 Наш девиз:
+					h2 Solo juntos venceremos! <br>Только вместе победим!
+		+sOnline
+		+sMap
+	+footer()
+
+
+	

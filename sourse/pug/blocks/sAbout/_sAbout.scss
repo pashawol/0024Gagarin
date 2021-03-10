@@ -1,0 +1,61 @@
+
+	// start .sAbout
+	.sAbout {
+		margin-top: calc(var(--h) );
+			@include media-breakpoint-up(xxl) {
+				font-size: rem(30);
+			}
+				font-size: rem(20);
+		position: relative;
+		z-index: 4;
+		picture{
+			margin-bottom: 2rem;
+		}
+		.row{
+			@include media-breakpoint-up(xxl) {
+
+				--bs-gutter-x: 50px;
+			}
+		 &:nth-child(even){
+			 flex-direction: row-reverse;
+		 }
+		 margin-bottom: rem(123);
+		 &:nth-child(3){
+			 picture{
+				 margin-left: -100px;
+			 }
+		 }
+		}
+
+			&__lg {
+				@extend .h1;
+				font-weight: 900;
+
+				@include media-breakpoint-up(xxxl) {
+					font-size: rem(92.88);
+				}
+
+				@include media-breakpoint-up(xxl) {
+					font-size: rem(72.88);
+				}
+
+				font-weight: 900;
+			}
+		--sPT: 0;
+		--sPB: 0;
+		// --sTPB: ;
+		 
+	@include media-breakpoint-up(xxl) {
+		margin-top: -50vh;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	//
+	@include media-breakpoint-between(md, xl) { }
+	//
+	@include media-breakpoint-only(xl) {}
+	//
+	@include media-breakpoint-down(xl) {}
+} // end.sAbout

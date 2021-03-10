@@ -1,0 +1,40 @@
+mixin mnu()
+	-
+		var nav= { 
+			"Первый":"#",
+			"Цены":"#",
+			"Выставка":"#",
+			"Где посмотреть":"#",
+			}
+	ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
+		each linkPatch, linkName in nav
+			li.menu-item(itemprop="item" ): a.menu-link(href= linkPatch itemprop="url")= linkName
+		li.menu-item.menu-item-has-children
+			a.menu-link(href="#" itemprop="url") Ru
+			ul.sub-menu
+				-
+					var subnav= { 
+						"Eng":"#",
+						"Ru":"#",
+						}
+				each sublinkPatch, sublinkName in subnav
+					li.menu-item(itemprop="item" ): a.menu-link(href= sublinkPatch itemprop="url")= sublinkName
+
+//- menu
+//- mixin mnu()
+//- 	-
+//- 		var nav= {
+//- 			"Главная":"#sContact",
+//- 			"Услуги  ":"#",
+//- 			"Подбор септика   ":"#",
+//- 			"Акции ":"#",
+//- 			" О компании  ":"#",
+//- 			" Доставка и оплата ":"#",
+//- 			" Клиентам  ":"#",
+//- 			" Наши работы   ":"#",
+//- 			"Контакты ":"#sContact"
+//- 			}
+//- 	+b.UL.navMenu(itemscope itemtype="http://schema.org/SiteNavigationElement")
+//- 		each linkPatch, linkName in nav
+//- 			+e.LI.item( itemprop="item" ): +e.A.link(href= linkPatch  itemprop="url")= linkName
+//- //- /menu
