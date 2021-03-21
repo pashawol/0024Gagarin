@@ -191,7 +191,7 @@ var JSCCommon = {
 			var destination = $(elementClick).offset().top;
 			$('html, body').animate({
 				scrollTop: destination
-			}, 1100);
+			}, 2000);
 			return false;
 		});
 	},

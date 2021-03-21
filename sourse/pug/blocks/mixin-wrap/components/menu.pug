@@ -1,10 +1,10 @@
 mixin mnu()
 	-
 		var nav= { 
-			"Первый":"#",
-			"Цены":"#",
-			"Выставка":"#",
-			"Где посмотреть":"#",
+			"Первый":"#main",
+			"О событии":"#sAbout",
+			"Выставка":"#sOnline",
+			"Где посмотреть":"#map",
 			}
 	ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
 		each linkPatch, linkName in nav

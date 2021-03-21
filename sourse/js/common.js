@@ -182,7 +182,7 @@ const JSCCommon = {
 			const elementClick = $(this).attr("href");
 			const destination = $(elementClick).offset().top;
 
-			$('html, body').animate({ scrollTop: destination }, 1100);
+			$('html, body').animate({ scrollTop: destination }, 2000);
 
 			return false;
 		});

@@ -26,9 +26,12 @@ html{
 
 body {
 	// min-width: 320px; 
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	background-image: url(../img/@2x/webp/bg.webp);
 	background-size: cover;
 	background-attachment: fixed;
@@ -485,3 +488,8 @@ iframe {
 .fixed-block{
 	padding-top: var(--sPT);
 }
+
+
+.3d-iframe{
+	  height: 500px;
+  }

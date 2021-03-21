@@ -1,0 +1,24 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sOnline/_sOnline.pug
+include ../blocks/sMap/_sMap.pug
+
+block variables
+	- let  mainPage= null 
+	- let  bg= null
+
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+
+	+mob-mnu()
+	+top-nav()
+
+	<iframe allowfullscreen  class="3d-iframe" src="app-files/index.html"></iframe>
+
+	+footer

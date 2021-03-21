@@ -61,6 +61,8 @@
 		display: block;
 		padding-left: rem(10);
 		padding-right: rem(10);
+		position: relative;
+
 	}
 	a:hover{
 		background-color: rgba($color: #fff, $alpha: .2);
@@ -69,5 +71,15 @@
 		&:not(:last-child) {
 			border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
 		}
+	}
+}
+.menu-item.menu-item-has-children > a{
+	&::after{
+		content: '';
+		@include triangle(12px,  currentColor, down);
+		display: inline-block;
+		margin-left: rem(5);
+		position: relative;
+		top: em(-2);
 	}
 }
