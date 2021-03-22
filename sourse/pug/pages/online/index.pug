@@ -1,0 +1,76 @@
+include ../../_assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+include ../../blocks/mixin-wrap/mixin-wrap.pug
+include ../../blocks/form-wrap/form-wrap.pug 
+include ../../blocks/modal/_modal.pug
+doctype html
+html
+	head
+		title Цифровая выставка: 60-летию пилотируемой космонавтики посвящается
+		meta(charset='utf-8')
+		meta(name='viewport', content='target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui')
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+		style.
+			@-ms-viewport { width: device-width; }
+		link(href='vendor/reset.min.css' rel='stylesheet')
+		link(href='style.css' rel='stylesheet')
+	body.multiple-scenes.view-control-buttons
+		#pano 
+			#sceneList
+				ul.scenes
+					a.scene(data-id='0-render' href='javascript:void(0)')
+						li.text render
+					a.scene(data-id='1-render1' href='javascript:void(0)')
+						li.text render1
+					a.scene(data-id='2-render2' href='javascript:void(0)')
+						li.text render2
+					a.scene(data-id='3-render3' href='javascript:void(0)')
+						li.text render3
+					a.scene(data-id='4-render4' href='javascript:void(0)')
+						li.text render4
+					a.scene(data-id='5-render5' href='javascript:void(0)')
+						li.text render5
+		#titleBar
+			.sceneName Цифровая выставка: 60-летию пилотируемой космонавтики посвящается
+		
+		a#autorotateToggle(href='javascript:void(0)')
+			img.icon.off(src='img/play.png')
+			img.icon.on(src='img/pause.png')
+		a#fullscreenToggle(href='javascript:void(0)')
+			img.icon.off(src='img/fullscreen.png')
+			img.icon.on(src='img/windowed.png')
+		//- a#sceneListToggle(href='javascript:void(0)')
+			//- img.icon.off(src='img/expand.png')
+			//- img.icon.on(src='img/collapse.png')
+		a#viewUp.viewControlButton.viewControlButton-1(href='javascript:void(0)')
+			img.icon(src='img/up.png')
+		a#viewDown.viewControlButton.viewControlButton-2(href='javascript:void(0)')
+			img.icon(src='img/down.png')
+		a#viewLeft.viewControlButton.viewControlButton-3(href='javascript:void(0)')
+			img.icon(src='img/left.png')
+		a#viewRight.viewControlButton.viewControlButton-4(href='javascript:void(0)')
+			img.icon(src='img/right.png')
+		a#viewIn.viewControlButton.viewControlButton-5(href='javascript:void(0)')
+			img.icon(src='img/plus.png')
+		a#viewOut.viewControlButton.viewControlButton-6(href='javascript:void(0)')
+			img.icon(src='img/minus.png')
+		+modal()
+		script(src='vendor/screenfull.min.js')
+		script(src='vendor/bowser.min.js')
+		script(src='vendor/marzipano.js')
+		script(src='data.js')
+		script(src='index.js')
+		link(href='../libs/@fancyapps/fancybox/jquery.fancybox.min.css' rel='stylesheet')
+		<link rel="stylesheet" href="../css/main.min.css">
+		script(src='../libs/jquery/jquery.min.js')
+		script(src='../libs/@fancyapps/fancybox/jquery.fancybox.min.js')
+		// <script src="../js/common.js"></script>
+		script.
+			//- $(".link-modal").fancybox({
+			//- arrows: false,
+			//- infobar: false,
+			//- touch: false,
+			//- type: 'inline',
+			//- autoFocus: false,  
+			//- });

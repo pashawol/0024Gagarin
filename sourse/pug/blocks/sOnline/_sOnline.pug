@@ -5,9 +5,8 @@ mixin sOnline(data)
 			+e.inner.bg-wrap
 				img(src="img/@2x/webp/sputnik.webp" alt="").sputnic
 				//+pic('sputnik.png','',0)
-				//- +pic('online','bg').picture-bg
-				<iframe allowfullscreen height="700" loading='lazy'  class="3d-iframe" src="app-files/index.html"></iframe>
+				+pic('online','bg').picture-bg
 				h2 ОНЛАЙН <br> ВЫСТАВКА
-				+e.link(href="app-files/") Посетить выставку
+				+e.link(href="/online") Посетить выставку
 					+icon("arrow-right")
 	// end sOnline

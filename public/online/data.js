@@ -58,7 +58,7 @@ var APP_DATA = {
         {
           "yaw": 0.9452963733334236,
           "pitch": 0.19268891636056473,
-          "title": '<a href="https://www.youtube.com/watch?v=KS2ngnRAKlg&list=PLqKQF2ojwm3llpxoP1rzoz7TE2Fpo4Zhp&index=4" data-fancybox>Видео</a> <a href="../img/@2x/webp/about-2.webp" data-fancybox>Фото</a>'
+          "title": '#modal-call'
         }
       ]
     },

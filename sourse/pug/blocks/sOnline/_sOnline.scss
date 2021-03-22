@@ -50,6 +50,7 @@
 				}
 			}
 			.picture-bg {
+				opacity: 0.4;
 			}
 		}
 		&__link{
@@ -59,7 +60,14 @@
 			font-size: rem(30);
 			}
 			color: var(--body-color) ;
+			&:hover{
+				.icon{
+					transform: translateX(10%);
+					stroke-width: 2px;
+				}
+			}
 			.icon{
+				@include mt;
 				margin-left: em(10);
 				font-size: 1em;
 				fill: transparent;

@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>title</title>
+		<title>Цифровая выставка: 60-летию пилотируемой космонавтики посвящается</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -160,8 +160,16 @@
 			<section class="sOnline section" id="sOnline">
 				<div class="container">
 					<div class="sOnline__inner bg-wrap"><img class="sputnic" src="img/@2x/webp/sputnik.webp" alt=""/>
-						<!--+pic('sputnik.png','',0)--><iframe allowfullscreen height="700" loading='lazy'  class="3d-iframe" src="app-files/index.html"></iframe>
-						<h2>ОНЛАЙН <br> ВЫСТАВКА</h2><a class="sOnline__link" href="app-files/">Посетить выставку
+						<!--+pic('sputnik.png','',0)-->
+						<!-- picture-->
+						<picture class="picture-bg"> 
+							<source type="image/webp" srcset="img/@2x/webp/online.webp" media="(min-width:576px)"/>
+							<source type="image/webp" srcset="img/@1x/webp/online.webp"/>
+							<source type="image/jpg" srcset="img/@2x/online.jpg" media="(min-width:576px)"/>
+							<source type="image/jpg" srcset="img/@1x/online.jpg"/><img class="object-fit-js" src="img/@2x/online.jpg" alt="" loading="lazy"/>
+						</picture>
+						<!-- /picture-->
+						<h2>ОНЛАЙН <br> ВЫСТАВКА</h2><a class="sOnline__link" href="/online">Посетить выставку
 						<svg class="icon icon-arrow-right ">
 							<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
 						</svg></a>

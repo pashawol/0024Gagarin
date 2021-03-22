@@ -138,7 +138,7 @@
   }
 
   // Set handler for scene list toggle.
-  sceneListToggleElement.addEventListener('click', toggleSceneList);
+  // sceneListToggleElement.addEventListener('click', toggleSceneList);
 
   // Start with the scene list open on desktop.
   if (!document.body.classList.contains('mobile')) {
@@ -192,7 +192,7 @@
   }
 
   function updateSceneName(scene) {
-    sceneNameElement.innerHTML = sanitize(scene.data.name);
+    // sceneNameElement.innerHTML = sanitize(scene.data.name);
   }
 
   function updateSceneList(scene) {
@@ -207,13 +207,13 @@
   }
 
   function showSceneList() {
-    sceneListElement.classList.add('enabled');
-    sceneListToggleElement.classList.add('enabled');
+    // sceneListElement.classList.add('enabled');
+    // sceneListToggleElement.classList.add('enabled');
   }
 
   function hideSceneList() {
-    sceneListElement.classList.remove('enabled');
-    sceneListToggleElement.classList.remove('enabled');
+    // sceneListElement.classList.remove('enabled');
+    // sceneListToggleElement.classList.remove('enabled');
   }
 
   function toggleSceneList() {
@@ -296,20 +296,22 @@
     header.classList.add('info-hotspot-header');
 
     // Create image element.
-    var iconWrapper = document.createElement('div');
+    var iconWrapper = document.createElement('a');
     iconWrapper.classList.add('info-hotspot-icon-wrapper');
+    iconWrapper.setAttribute("data-fancybox",'');
+    var title = document.createElement('div');
+    // title.innerHTML = hotspot.title;
+    iconWrapper.href = hotspot.title;
+    // iconWrapper .appendChild(title);
     var icon = document.createElement('img');
     icon.src = 'img/info.png';
     icon.classList.add('info-hotspot-icon');
     iconWrapper.appendChild(icon);
 
-    // Create title element.
+    // // Create title element.
     var titleWrapper = document.createElement('div');
-    titleWrapper.classList.add('info-hotspot-title-wrapper');
-    var title = document.createElement('div');
-    title.classList.add('info-hotspot-title');
-    title.innerHTML = hotspot.title;
-    titleWrapper.appendChild(title);
+    // titleWrapper.classList.add('info-hotspot-title-wrapper');
+    // title.classList.add('info-hotspot-title');
 
     // Create close element.
     var closeWrapper = document.createElement('div');
@@ -345,7 +347,7 @@
     };
 
     // Show content when hotspot is clicked.
-    wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
+    // wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
 
     // Hide content when close icon is clicked.
     modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);

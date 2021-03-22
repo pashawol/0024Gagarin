@@ -12,21 +12,7 @@ const JSCCommon = {
 			infobar: false,
 			touch: false,
 			type: 'inline',
-			autoFocus: false,
-			i18n: {
-				en: {
-					CLOSE: "Закрыть",
-					NEXT: "Вперед",
-					PREV: "Назад",
-					// PLAY_START: "Start slideshow",
-					// PLAY_STOP: "Pause slideshow",
-					// FULL_SCREEN: "Full screen",
-					// THUMBS: "Thumbnails",
-					// DOWNLOAD: "Download",
-					// SHARE: "Share",
-					// ZOOM: "Zoom"
-				},
-			},
+			autoFocus: false, 
 			beforeLoad: function () {
 				document.querySelector("html").classList.add("fixed")
 			},
@@ -238,17 +224,17 @@ function eventHandler() {
 
 	let height = window.innerHeight;
 	var tween = new TimelineMax()
-		.from(".picture-block--1", 100, { y: height / 1.8 })
-		.from(".picture-block--1 .picture-block__caption", 10, { opacity: 0 })
-		.from(".picture-block--2", 200, { y: height })
-		.to(".picture-block--1 .picture-block__caption", 10, { opacity: 0 })
-		.to(".picture-block--2 .picture-block__caption", 10, { x: '50%', opacity: 0 })
-		.to(".picture-block--2 ", 100, { scale: '.8', x: '10%' })
-		.from(".picture-block--3", 200, { y: height, delay: -1 })
-		.from(".picture-block--3", 200, { scale: '.5', x: '-10%' })
-		.to(".picture-block--1, .picture-block--2", 100, { opacity: 0, delay: -50 })
-		.to(".headerBlock__block", 100, { opacity: 0, })
-		.to(".picture-block--3", 100, { opacity: .4, delay: -50 })
+		.from(".picture-block--1", 100, { y: height / 1.8 ,duration: 1500,})
+		.from(".picture-block--1 .picture-block__caption", 10, { opacity: 0 ,duration: 1500,})
+		.from(".picture-block--2", 200, { y: height ,duration: 1500,})
+		.to(".picture-block--1 .picture-block__caption", 10, { opacity: 0 ,duration: 1500,})
+		.to(".picture-block--2 .picture-block__caption", 10, { x: '50%', opacity: 0 ,duration: 1500,})
+		.to(".picture-block--2 ", 100, { scale: '.8', x: '10%' ,duration: 1500,})
+		.from(".picture-block--3", 200, { y: height, delay: -1 ,duration: 1500,})
+		.from(".picture-block--3", 200, { scale: '.5', x: '-10%' ,duration: 1500,})
+		.to(".picture-block--1, .picture-block--2", 100, { opacity: 0, delay: -50 ,duration: 1500,})
+		.to(".headerBlock__block", 100, { opacity: 0,  duration: 1500,})
+		.to(".picture-block--3", 100, { opacity: .4, delay: -50 ,duration: 1500,})
 	// build scene
 	new ScrollMagic
 		.Scene({ triggerElement: ".headerBlock", triggerHook: "onLeave", duration: '500%', offset: '0%' })
@@ -257,14 +243,14 @@ function eventHandler() {
 		// .addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
 	var tween2 = new TimelineMax()
-		.to(".fixed-block p", 1, {y: '-50%', opacity:0})
-		.to(".picture-block--3", 100, { opacity: .2})
-		.to(".fixed-block , .picture-block--3", 100, { y: '-100%'})
+		.to(".fixed-block p", 1, {y: '-50%', opacity:0 ,duration: 1500,})
+		.to(".picture-block--3", 100, { opacity: .2 ,duration: 1500,})
+		.to(".fixed-block , .picture-block--3", 100, { y: '-100%' ,duration: 1500,})
 
 	let scene2 = new ScrollMagic
 		.Scene({
 			triggerElement: "#trigger1",
-			duration: "100%",
+			duration: "150%",
 			offset: '0%',
 			triggerHook: 'onLeave',
 		})
@@ -274,12 +260,12 @@ function eventHandler() {
 		.addTo(controller);
 
 	var tween3 = new TimelineMax()
-		.from(".sMap h2", 1, {opacity:0})
-		.from(".map-block", 1, {y: '50%', opacity:0})
+		.from(".sMap h2", 1, {opacity:0 ,duration: 1500,})
+		.from(".map-block", 1, {y: '50%', opacity:0 ,duration: 1500,})
 	let scene3 = new ScrollMagic
 		.Scene({
 			triggerElement: "#sMap",
-			duration: "100%",
+			duration: "150%",
 			// offset: '0%',
 			// triggerHook: 'onLeave',
 		})

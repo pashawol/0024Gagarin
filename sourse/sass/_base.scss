@@ -493,3 +493,15 @@ iframe {
 .3d-iframe{
 	  height: 500px;
   }
+
+	body.multiple-scenes #titleBar {
+		left: 0;
+	}
+
+	.info-hotspot .info-hotspot-title-wrapper {
+		overflow: visible;
+	}
+
+	.info-hotspot-icon-wrapper{
+		display: block;
+	}
