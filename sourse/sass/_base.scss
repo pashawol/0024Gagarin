@@ -523,11 +523,16 @@ iframe {
 
 	.info-hotspot{
 		&:not(:hover) {
-			// opacity: 0.5;
+			opacity: 0.5;
 		}
 	}
 	.info-hotspot .info-hotspot-header,
 	.info-hotspot .info-hotspot-icon-wrapper{
-		width: 30px;
-		height: 30px;
+		// width: 30px;
+		// height: 30px;
+		border-radius: 0;
+	}
+
+	.hotspot-tooltip{
+		display: none !important;
 	}

@@ -1,24 +1,5 @@
-mixin mnu()
-	-
-		var nav= { 
-			"Первый":"#main",
-			"О событии":"#sAbout",
-			"Выставка":"#sOnline",
-			"Где посмотреть":"#map",
-			}
-	ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
-		each linkPatch, linkName in nav
-			li.menu-item(itemprop="item" ): a.menu-link(href= linkPatch itemprop="url")= linkName
-		li.menu-item.menu-item-has-children
-			a.menu-link(href="#" itemprop="url") Ru
-			ul.sub-menu
-				-
-					var subnav= { 
-						"Eng":"#",
-						"Ru":"#",
-						}
-				each sublinkPatch, sublinkName in subnav
-					li.menu-item(itemprop="item" ): a.menu-link(href= sublinkPatch itemprop="url")= sublinkName
+mixin mnu(n)
+	div
 
 //- menu
 //- mixin mnu()

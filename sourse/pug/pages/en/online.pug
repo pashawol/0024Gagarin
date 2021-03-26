@@ -1,0 +1,154 @@
+extends ../layout-lang/main.pug
+block variables
+	- let  mainPage= null 
+	-
+		let  bg= null
+		let la= "ru"
+	meta(name="description", content="о чем страница")
+	meta(name="keywords", content="exposition, expo, conference, event, digital, virtual, 3D, online, mobile, interactive, registration, accreditation, digital exposition, digital expo, digital conference, digital event, digital registration, digital accreditation, digital solutions, digital services, digital platform, virtual exposition, virtual expo, virtual conference, virtual event, virtual registration, virtual accreditation, virtual solutions, virtual services, virtual platform, 3D exposition, 3D expo, 3D conference, 3D event, 3D registration, 3D accreditation, 3D solutions, 3D services, 3D platform, online exposition, online expo, online conference, online event, online registration, online accreditation, online solutions, online services, online platform, mobile registration, mobile accreditation, interactive services, interactive solutions, registration services, registration solutions, RUVENTS, Ruvents, www.ruvents.com, DIGIDATA, DIGITEXPO, www.digitexpo.ru , photo, video, photo event, photo exposition, photo expo, photo exhibition, Yury Gagarin, Gagarin, cosmonaut, first cosmonaut, Republic of Cuba, Cuba, Havana, Revolution Square, Playa Girón, Space, The First, First in space, Russia, Russian Federation, Moscow, Vostok, Spaceship Vostok, Friendship, Russia-Cuba Friendship, Cuba - Russia Friendship, Fidel Castro, Raul Castro, Fidel, Raul, Castro, Che, Comandante, Che Guevara, Osvaldo Dorticós, 12 April, 1961, 2021, Anniversary, 60th, 60th Anniversary, RosCosmos, Mendes, Romanenko, Arnaldo Tamayo Mendes, Yury Romanenko, RODK, The Russian Society for Friendship with Cuba, www.roscuba.ru, Russian association of planetariums, Planetarium, www.apr.planetariums.ru, TASS Russian News Agency, TASS")
+block title
+	- let  title= 'Цифровая выставка: 60-летию пилотируемой космонавтики посвящается'
+	title= title
+	+onhead()
+block variables
+	- let  mainPage= ' multiple-scenes view-control-buttons'
+block pagecontent 
+		+pano()
+		#titleBar
+			h1.h6.sceneName= title
+		
+		+on()
+		mixin firstModal()
+			p April 12, 1961  – April 12, 2021
+			p All-Russian Public Organization 
+			p.mb-0: strong “The Russian Society for Friendship with Cuba” (RODK)   
+			p: a(href="roscuba.ru" target="_blank")  www.roscuba.ru
+			p.mb-0: strong Russian association of planetariums
+			p: a(href="apr.planetariums.ru" target="_blank")  www.apr.planetariums.ru
+			p.mb-0: strong RUVENTS Digital Products
+			p: a(href="ruvents.com" target="_blank")  www.ruvents.com 
+			p DEDICATED TO THE 60TH ANNIVERSARY OF MANNED COSMONAUTICS. 
+			p THE FIRST: GAGARIN AND CUBA    
+			p Based on the photo album “Invincible-3. To the 85th anniversary of Yury Gagarin ", 2019, RODK (photos provided by TASS Russian News Agency) 
+		+modalgal(1)
+			+firstModal()
+		+modalgal(2)
+			+firstModal()
+		+modalgal(3)
+			+firstModal()
+		+modalgal(4)
+			p The first cosmonaut of the planet Yuri Alekseevich Gagarin - since 1961 the first holder of the national order of the Republic of Cuba "Playa Girón" and in 1964-1968 the first president of the All-Union Society of Soviet-Cuban friendship (WOSKD). Under his leadership and with direct participation the goals, directions and principles of the Society's activities were determined, its structure and staff were formed. Yuri Gagarin, who triumphantly visited about 30 countries, could head any friendship society. He has chosen Cuba. 3 visits to Cuba, friendship with the legendary Fidel Castro and Ernesto Che Guevara, meetings with Cubans, development of WOSKD - became a bright page in his life. The Russian Society for Friendship with Cuba (RODK), as the successor to WOSKD, keeps the memory of its first president and his enormous contribution to the creation of the foundations and traditions of Soviet-Cuban and Russian-Cuban friendship. Our motto: Solo juntos venceremos! Only together we will win! 
+			p With Ernesto Che Guevara at the founding meeting of WOSKD in Moscow. November 11, 1964. Author V. Musaelyan a
+		+modalgal(5)
+			p With President of the Republic of Cuba Osvaldo Dorticós and Prime Minister of the Republic of Cuba Fidel Castro during a meeting at the airport. Havana, July 24, 1961 Author V. Sobolev
+		+modalgal(6)
+			p "Two majors, two commanders. The first meeting. 
+				br
+				| Havana, 24 July 1961"
+		+modalgal(7)
+			p "Havana meets the first cosmonaut of the planet. Revolution Square.
+				br
+				| July 24, 1961 Author V. Sobolev"
+		+modalgal(8)
+			div While visiting a military hospital
+			div Havana, July 26, 1961. Author V. Sobolev
+		+modalgal(9)
+			div Meeting with a wounded participant in the battles in the Playa Girón. Havana, July 26, 1961. Author V. Sobolev
+
+		+modalgal(10)
+			div Meeting with a wounded participant in the battles in the Playa Girón. Havana, July 26, 1961. Author V. Sobolev
+		+modalgal(11)
+			div "”Wow! It’s Gagarin himself!” 
+			div Havana, July 26, 1961. Author V. Sobolev"
+		+modalgal(12)
+			div Havana, July 26, 1961. 
+		+modalgal(13)
+			div "“This is how the Cuban astronaut will fly space!"" 
+			div Havana, July 26, 1961 Author V. Sobolev"
+		+modalgal(14)
+			div Havana, July 26, 1961
+		+modalgal(15)
+			div Warm welcoming.
+			div Havana, July 26, 1961. Author V. Sobolev
+		+modalgal(16)
+			div On the podium during the celebration of the 8th anniversary of the start of Cuban people’s revolution with Fidel Castro and Osvaldo Dorticós.         Havana, July 26, 1961 Author V. Sobolev
+		+modalgal(17)
+			div "“How long have you been in space?  Almost 2 hours? Keep time, I will talk longer!"" 
+			div Havana, July 26, 1961 Author V. Sobolev"
+		+modalgal(18)
+			div Havana, July 26, 1961.
+		+modalgal(19)
+			div At a meeting of the Cuban-Soviet friendship on Revolution Square. Havana, July 26, 1961 Author V. Sobolev
+		+modalgal(20)
+			div "Presentation of the National Order of “Playa Girón” №1. 
+			div Havana, July 26, 1961 Author V. Sobolev"
+		+modalgal(21)
+			div "Congratulations on being awarded the Order of “Playa Girón”. 
+			div Havana. Revolution Square, July 26, 1961. Author V. Sobolev"
+		+modalgal(22)
+			div Havana. Revolution Square, July 26, 1961. Author V. Sobolev
+		+modalgal(23)
+			div "Rally at the Revolution Square.
+			div Havana, July 26, 1961."
+		+modalgal(24)
+			div "On the Revolution Square with the leaders of the Republic of Cuba and the Cuban revolutionary, historian and geographer Antonio Núñez Jiménez (in 1962-1972 the president of the Cuban Academy of sciences, in 1969-1972 president of the Association of Cuban-Soviet Friendship). 
+			div Havana, July 26, 1961"
+		+modalgal(25)
+			div "With Osvaldo Dorticós, USSR ambassador of the Republic of Cuba S. M. Kudryavtsev and Hero of the Soviet Union (1934), lieutenant general of aviation, head of the selection and training of the first Soviet cosmonauts N. P. Kamanin. 
+			div Havana,  July 25-27, 1961"
+		+modalgal(26)
+			div Meeting with Fidel Castro.
+			div Havana, July 25-27, 1961
+		+modalgal(27)
+			div "Meeting with Osvaldo Dorticós at the Presidential Palace. 
+			div Havana,  July 25-27, 1961 Author V. Sobolev"
+		+modalgal(28)
+			div "Meeting with the leaders of Cuba at the Presidential Palace. 
+			div Havana,  July 25-27, 1961 Author V. Sobolev"
+		+modalgal(29)
+			div "On the balcony of the Presidential Palace.
+			div Havana, July 25-27, 1961."
+		+modalgal(30)
+			div "Presentation of a memorial sign in honor of the Cuban-Soviet friendship.
+			div Havana,  July 25-27, 1961."
+		+modalgal(31)
+			div Havana, July 25-27, 1961.
+		+modalgal(32)
+			div "Autograph of the first astronaut
+			div Havana, July 25-27, 1961."
+		+modalgal(33)
+			div "Friendly exchange
+			div Havana, July 1961"
+		+modalgal(34)
+			div "Meeting between comrades
+			div Havana, July 1961"
+		+modalgal(35)
+			div "Friendly lunch
+			div Havana, July 1961"
+		+modalgal(36)
+			div "Back in Cuba
+			div Havana, October 10, 1963."
+		+modalgal(37)
+			div Meeting of Fidel Castro with Soviet cosmonauts Yuri Gagarin, Pavel Popovich, Andriyan Nikolaev, German Titov, Valery Bykovsky. Moscow, Kremlin, May 1, 1964 Author V. Egorov.
+		+modalgal(38)
+			div "“The All-Union Society of soviet-cuban friendship has been created!” - With Ernesto Che Guevara and N.V Popova, chairman of the Union of soviet societies for friendship and cultural relations with foreign countries. 
+			div Moscow, November 11, 1964 "
+		+modalgal(39)
+			div "Meeting at the House of friendship with the peoples of foreign countries with the deputy prime minister of the Republic of Cuba Raul Castro and cosmonaut Vladimir Komarov. 
+			div Moscow, 1965, Author V. Savostyanov."
+		+modalgal(40)
+			div Signing the Plan of scientific cooperation between the USSR and Cuba. 
+			div Moscow, 1965, Author V. Mastyukov.между СССР и Кубой. 
+		+modalgal(41)
+			div "Opening of the evening at the House of friendship with the peoples of foreign countries, dedicated to the 4th anniversary of the Cuban’s victory at Playa Giron. 
+			div Moscow, April 1965 Author S. Preobrazhensky"
+		+modalgal(42)
+			div "Presenting, together with the Ambassador of the Republic of Cuba in the USSR Carlos Olivares, an award to the winner of the competition “Do You Know Cuba?” Zoya Sokolova.
+			div Moscow, 1966, Author V. Egorov."
+		+modalgal(43)
+			div On September 18, 1980, Yuri Gagarin's prediction came true: a spacecraft with a soviet-cuban crew consisting of Yuri Romanenko and Arnaldo Tamayo Mendes (since 1999 - chairman of the Cuba-Russia Friendship Association) was launched into orbit.
+
+
+
+
+		+onscript()

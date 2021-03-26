@@ -1,0 +1,89 @@
+extends ../layout-lang/main.pug
+
+
+include ../../blocks/sContent/_sContent.pug
+include ../../blocks/sContact/_sContact.pug
+include ../../blocks/sAbout/_sAbout.pug
+include ../../blocks/sOnline/_sOnline.pug
+include ../../blocks/sMap/_sMap.pug
+
+block variables
+	- let  mainPage= null 
+	-
+		let  bg= null
+		let la= "en"
+	meta(name="description", content="о чем страница")
+	meta(name="keywords" content="exposition, expo, conference, event, digital, virtual, 3D, online, mobile, interactive, registration, accreditation, digital exposition, digital expo, digital conference, digital event, digital registration, digital accreditation, digital solutions, digital services, digital platform, virtual exposition, virtual expo, virtual conference, virtual event, virtual registration, virtual accreditation, virtual solutions, virtual services, virtual platform, 3D exposition, 3D expo, 3D conference, 3D event, 3D registration, 3D accreditation, 3D solutions, 3D services, 3D platform, online exposition, online expo, online conference, online event, online registration, online accreditation, online solutions, online services, online platform, mobile registration, mobile accreditation, interactive services, interactive solutions, registration services, registration solutions, RUVENTS, Ruvents, www.ruvents.com, DIGIDATA, DIGITEXPO, www.digitexpo.ru , photo, video, photo event, photo exposition, photo expo, photo exhibition, Yury Gagarin, Gagarin, cosmonaut, first cosmonaut, Republic of Cuba, Cuba, Havana, Revolution Square, Playa Girón, Space, The First, First in space, Russia, Russian Federation, Moscow, Vostok, Spaceship Vostok, Friendship, Russia-Cuba Friendship, Cuba - Russia Friendship, Fidel Castro, Raul Castro, Fidel, Raul, Castro, Che, Comandante, Che Guevara, Osvaldo Dorticós, 12 April, 1961, 2021, Anniversary, 60th, 60th Anniversary, RosCosmos, Mendes, Romanenko, Arnaldo Tamayo Mendes, Yury Romanenko, RODK, The Russian Society for Friendship with Cuba, www.roscuba.ru, Russian association of planetariums, Planetarium, www.apr.planetariums.ru, TASS Russian News Agency, TASS")
+block title
+	- let  title= 'Цифровая выставка: 60-летию пилотируемой космонавтики посвящается'
+	title= title
+block pagecontent
+	-
+
+		let nav= { 
+			link1: "The First",
+			link2: "Event",
+			link3: "Exposition",
+			link4: "Map",
+			}
+		let headerBlock = {
+			toptext:`DEDICATED TO&nbsp;THE 60TH ANNIVERSARY OF&nbsp;MANNED COSMONAUTICS.`,
+			title:` THE FIRST:<br> GAGARIN AND CUBA `,
+			text:`Based on&nbsp;the photo album &laquo;Invincible-3. To&nbsp;the 85th anniversary of&nbsp;Yury Gagarin &raquo;, 2019, RODK`,
+			picture1: 'Ю. А. Гагарин',
+			picture2: 'Ю. А. Гагарин и Эрнесто «Че» Гевара',
+		} 
+		let about = {
+			text1: `<div class="col"> 
+							<p class="strong">«Восток» —  первый космический аппарат, поднявший человека на околоземную орбиту.</p>
+							<p>На корабле «Восток» 12 апреля 1961 года лётчик-космонавт СССР Юрий Алексеевич Гагарин совершил первый в мире полёт в космическое пространство. Старт корабля состоялся с космодрома Байконур (Казахстан) в 9 часов 7 минут московского времени (06:07:00 UTC). Корабль выполнил один оборот вокруг Земли и совершил посадку в 10 часов 55 минут (07:55:00 UTC) в районе деревни Смеловка Саратовской области (Россия).</p>
+						</div>`,
+			text2: `<p class="strong">The first cosmonaut of the planet Yuri Alekseevich Gagarin - since 1961 the first holder of the national order of the Republic of Cuba "Playa Girón" and in 1964-1968 the first president of the All-Union Society of Soviet-Cuban friendship (WOSKD)</p>`,
+			text3: `<p class="strong">Under his leadership and with direct participation the goals, directions and principles of&nbsp;the Society&rsquo;s activities were determined, its structure and staff were formed. Yuri Gagarin, who triumphantly visited about 30&nbsp;countries, could head any friendship society. He&nbsp;has chosen Cuba.&nbsp;3&nbsp;visits to&nbsp;Cuba, friendship with the legendary Fidel Castro and Ernesto Che Guevara, meetings with Cubans, development of&nbsp;WOSKD&nbsp;&mdash; became a&nbsp;bright page in&nbsp;his life.</p>`,
+			text4: `<p class="strong">The Russian Society for Friendship with Cuba (RODK), as&nbsp;the successor to&nbsp;WOSKD, keeps the memory of&nbsp;its first president and his enormous contribution to&nbsp;the creation of&nbsp;the foundations and traditions of&nbsp;Soviet-Cuban and Russian-Cuban friendship.</p>`,
+		}
+		let deviz=  'Our motto:'
+		let deviztext= `Solo juntos venceremos! <br> Only together we will win! `
+		let online={
+			title: `ONLINE-EXHIBITION`,
+			link: `Press to&nbsp;visit exhibition`
+		}
+		let map={
+			title: `MAP OF&nbsp;THE EXHIBITION BY&nbsp;RODK BRANCHES`,
+		}
+	
+	#stars
+	#stars2 
+	#stars3
+	//- +mob-mnu()
+	+top-nav(nav)
+		a.menu-link(href="/en" ) Eng
+		ul.sub-menu
+			li.menu-item
+				a.menu-link(href="/ru" ) Ru 
+			li.menu-item
+				a.menu-link(href="/esp" ) ESP
+	.main-wrapper#main
+		+headerBlock(headerBlock)
+			+b.picture-block--1
+				+pic(`picture-1.jpg`,'','992px','../')
+				+e.caption= headerBlock.picture1
+
+			+b.picture-block--2
+				+pic(`picture-2.jpg`,'','992px','../')
+				+e.caption= headerBlock.picture2
+			+b.picture-block--3
+				+pic(`picture-3.jpg`,'bg','','../')
+
+		+sAbout(about)
+		#trigger1
+			.fixed-block
+				.container
+					p.mb-5= deviz
+					h2!= deviztext
+		+sOnline(online)
+		+sMap(map)
+	+footer()
+
+
+	

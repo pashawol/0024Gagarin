@@ -11,11 +11,16 @@
 	width: 100%;
 	
 	// min-height: calc(var(--vh, 1vh) * 100 * 4); 
+
 	display: flex;
 	align-items: center;  
 	.container{
 		min-height: var(--h);
-		display: flex;
+
+				display: flex;
+				@include media-breakpoint-up(md) {
+				}
+				flex-wrap: wrap;
 		align-items: center;  
 	}
 	&__text-top{
@@ -61,6 +66,14 @@
 .picture-block{
 	position: absolute;
 	right: 0;
+	&--0{
+		max-width: 40%;
+		@include media-breakpoint-down(md) {
+			position: static;
+			max-width: 100%;
+		}
+
+	}
 	&__caption{
 		padding-top: rem(20);
 	}

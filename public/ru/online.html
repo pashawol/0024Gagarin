@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Цифровая выставка: 60-летию пилотируемой космонавтики посвящается</title>
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"/>
+		<style>@-ms-viewport { width: device-width; }</style>
+		<link href="../3d/vendor/reset.min.css" rel="stylesheet"/>
+		<link href="../3d/style.css" rel="stylesheet"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="../libs/@fancyapps/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
+		<link href="../css/main.min.css" rel="stylesheet"/>
+	</head>
+	<body class=" multiple-scenes view-control-buttons">
+		<div class="mt-5" id="pano"> 
+			<div id="sceneList">
+				<ul class="scenes"> <a class="scene" data-id="0-1-copy" href="javascript:void(0)"></a><a class="scene" data-id="1-2-copy" href="javascript:void(0)"></a><a class="scene" data-id="2-3-copy" href="javascript:void(0)"></a><a class="scene" data-id="3-4-copy" href="javascript:void(0)"></a><a class="scene" data-id="4-5-copy" href="javascript:void(0)"></a><a class="scene" data-id="5-6-copy" href="javascript:void(0)"></a></ul>
+			</div>
+		</div>
+		<div id="titleBar">
+			<h1 class="h6 sceneName">Цифровая выставка: 60-летию пилотируемой космонавтики посвящается</h1>
+		</div><a id="autorotateToggle" href="javascript:void(0)"><img class="icon off" src="img/play.png"/><img class="icon on" src="img/pause.png"/></a><a id="fullscreenToggle" href="javascript:void(0)"><img class="icon off" src="img/fullscreen.png"/><img class="icon on" src="img/windowed.png"/></a><a class="viewControlButton viewControlButton-1" id="viewUp" href="javascript:void(0)"><img class="icon" src="img/up.png"/></a><a class="viewControlButton viewControlButton-2" id="viewDown" href="javascript:void(0)"><img class="icon" src="img/down.png"/></a><a class="viewControlButton viewControlButton-3" id="viewLeft" href="javascript:void(0)"><img class="icon" src="img/left.png"/></a><a class="viewControlButton viewControlButton-4" id="viewRight" href="javascript:void(0)"><img class="icon" src="img/right.png"/></a><a class="viewControlButton viewControlButton-5" id="viewIn" href="javascript:void(0)"><img class="icon" src="img/plus.png"/></a><a class="viewControlButton viewControlButton-6" id="viewOut" href="javascript:void(0)"><img class="icon" src="img/minus.png"/></a>
+		<div class="modal-win" id="el-1" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/1.webp"/><img src="../img/@2x/1.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+						<p>12 апреля 1961 г.  – 12 апреля 2021 г.</p>
+						<p>Общероссийская общественная организация</p>
+						<p class="mb-0"><strong>«Российское общество дружбы с Кубой»</strong></p>
+						<p><a href="roscuba.ru" target="_blank"> www.roscuba.ru</a></p>
+						<p class="mb-0"><strong>Ассоциация планетариев России</strong></p>
+						<p><a href="apr.planetariums.ru" target="_blank"> www.apr.planetariums.ru</a></p>
+						<p class="mb-0"><strong>RUVENTS</strong></p>
+						<p><a href="ruvents.com" target="_blank"> www.ruvents.com </a></p>
+						<p>60-ЛЕТИЮ ПИЛОТИРУЕМОЙ КОСМОНАВТИКИ ПОСВЯЩАЕТСЯ.</p>
+						<p>ПЕРВЫЙ: ГАГАРИН И КУБА</p>
+						<p>На основе фотоальбома «Непобедимые-3. К 85-летию Ю. А. Гагарина», 2019 г., РОДК (фотографии предоставлены информационным агентством ТАСС)</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-2" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/2.webp"/><img src="../img/@2x/2.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+						<p>12 апреля 1961 г.  – 12 апреля 2021 г.</p>
+						<p>Общероссийская общественная организация</p>
+						<p class="mb-0"><strong>«Российское общество дружбы с Кубой»</strong></p>
+						<p><a href="roscuba.ru" target="_blank"> www.roscuba.ru</a></p>
+						<p class="mb-0"><strong>Ассоциация планетариев России</strong></p>
+						<p><a href="apr.planetariums.ru" target="_blank"> www.apr.planetariums.ru</a></p>
+						<p class="mb-0"><strong>RUVENTS</strong></p>
+						<p><a href="ruvents.com" target="_blank"> www.ruvents.com </a></p>
+						<p>60-ЛЕТИЮ ПИЛОТИРУЕМОЙ КОСМОНАВТИКИ ПОСВЯЩАЕТСЯ.</p>
+						<p>ПЕРВЫЙ: ГАГАРИН И КУБА</p>
+						<p>На основе фотоальбома «Непобедимые-3. К 85-летию Ю. А. Гагарина», 2019 г., РОДК (фотографии предоставлены информационным агентством ТАСС)</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-3" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/3.webp"/><img src="../img/@2x/3.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+						<p>12 апреля 1961 г.  – 12 апреля 2021 г.</p>
+						<p>Общероссийская общественная организация</p>
+						<p class="mb-0"><strong>«Российское общество дружбы с Кубой»</strong></p>
+						<p><a href="roscuba.ru" target="_blank"> www.roscuba.ru</a></p>
+						<p class="mb-0"><strong>Ассоциация планетариев России</strong></p>
+						<p><a href="apr.planetariums.ru" target="_blank"> www.apr.planetariums.ru</a></p>
+						<p class="mb-0"><strong>RUVENTS</strong></p>
+						<p><a href="ruvents.com" target="_blank"> www.ruvents.com </a></p>
+						<p>60-ЛЕТИЮ ПИЛОТИРУЕМОЙ КОСМОНАВТИКИ ПОСВЯЩАЕТСЯ.</p>
+						<p>ПЕРВЫЙ: ГАГАРИН И КУБА</p>
+						<p>На основе фотоальбома «Непобедимые-3. К 85-летию Ю. А. Гагарина», 2019 г., РОДК (фотографии предоставлены информационным агентством ТАСС)</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-4" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/4.webp"/><img src="../img/@2x/4.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>Первый космонавт планеты Юрий Алексеевич Гагарин - с 1961 г. первый кавалер национального ордена Республики Куба «Плайя-Хирон» и в 1964-1968 гг. первый Президент Всесоюзного общества советско-кубинской дружбы (ВОСКД). Под его руководством и при непосредственном участии были определены цели, направления и принципы деятельности Общества, сформированы его структура и кадровый потенциал. Юрий Гагарин, триумфально посетивший около 30 стран, мог возглавить любое общество дружбы. Он выбрал Кубу. 3 визита на Кубу, дружба с легендарными Фиделем Кастро и Эрнесто Че Геварой, встречи с кубинцами, работа в ВОСКД стали яркой страницей его жизни. Российское общество дружбы с Кубой как преемник ВОСКД хранит память о своем первом Президенте и его огромном вкладе в создание основ и традиций советско- и российско-кубинской дружбы.</p>
+				<p>Наш девиз: Solo juntos venceremos! Только вместе победим!</p>
+				<p>С Эрнесто Че Геварой на учредительном собрании ВОСКД в Москве.</p>
+				<p>11 ноября 1964 года. Авт. В. Мусаэльян</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-5" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/5.webp"/><img src="../img/@2x/5.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>"С Президентом Республики Куба Освальдо Дортикосом и премьер-министром Республики Куба  Фиделем Кастро во время встречи на аэродроме. <br>Гавана, 24 июля 1961 г. Автор. В. Соболев"</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-6" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/6.webp"/><img src="../img/@2x/6.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>"Два майора, два команданте. Первая встреча.<br>Гавана, 24 июля 1961 г."</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-7" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/7.webp"/><img src="../img/@2x/7.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>"Гавана встречает первого космонавта планеты. Площадь Революции.<br>24 июля 1961 г. Авт. В. Соболев"</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-8" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/8.webp"/><img src="../img/@2x/8.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Во время посещения военного госпиталя.</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-9" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/9.webp"/><img src="../img/@2x/9.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Встреча с раненым участником боев в районе Плайя-Хирон.</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-10" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/10.webp"/><img src="../img/@2x/10.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Встреча с раненым участником боев в районе Плайя-Хирон.</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-11" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/11.webp"/><img src="../img/@2x/11.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"«Это же сам Гагарин!».</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-12" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/12.webp"/><img src="../img/@2x/12.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Гавана, 26 июля 1961 г.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-13" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/13.webp"/><img src="../img/@2x/13.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"«Вот так полетит кубинский космонавт!»</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-14" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/14.webp"/><img src="../img/@2x/14.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-15" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/15.webp"/><img src="../img/@2x/15.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Теплая встреча.</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-16" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/16.webp"/><img src="../img/@2x/16.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"На трибуне во время празднования 8-й годовщины начала народной революции с Фиделем Кастро и Освальдо Дортикосом. </div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-17" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/17.webp"/><img src="../img/@2x/17.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"«Сколько времени ты был в космосе? Почти 2 часа. Засекай время, я буду говорить дольше!»</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-18" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/18.webp"/><img src="../img/@2x/18.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Гавана, 26 июля 1961 г.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-19" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/19.webp"/><img src="../img/@2x/19.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"На митинге кубино-советской дружбы на площади Революции.</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-20" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/20.webp"/><img src="../img/@2x/20.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Вручение национального ордена «Плайя-Хирон» №1.</div>
+				<div>Гавана, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-21" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/21.webp"/><img src="../img/@2x/21.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Поздравление с награждением орденом «Плайя-Хирон».</div>
+				<div>Гавана. Площадь Революции, 26 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-22" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/22.webp"/><img src="../img/@2x/22.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Гавана. Площадь Революции, 26 июля 1961 г. Авт. В. Соболев</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-23" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/23.webp"/><img src="../img/@2x/23.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Митинг на площади Революции.</div>
+				<div>Гавана, 26 июля 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-24" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/24.webp"/><img src="../img/@2x/24.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"На площади Революции с руководителями Республики Куба и кубинским революционером, историком и географом Антонио Нуньесом Хименесом (в 1962 - 1972 гг. президент Академии наук Кубы, в 1969 - 1972 гг. президент Ассоциации кубино-советской дружбы).</div>
+				<div>Гавана, 26 июля 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-25" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/25.webp"/><img src="../img/@2x/25.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"С Освальдо Дортикосом, Послом СССР в Республике Куба С. М. Кудрявцевым и Героем Советского Союза (1934 г.), генерал-лейтенантом авиации, руководителем отбора и подготовки первых советских космонавтов Н.П.Каманиным. </div>
+				<div>Гавана, 25-27 июля 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-26" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/26.webp"/><img src="../img/@2x/26.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Встреча с Фиделем Кастро. Гавана, 25-27 июля 1961 г.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-27" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/27.webp"/><img src="../img/@2x/27.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Встреча с Освальдо Дортикосом в Президентском дворце.</div>
+				<div>Гавана, 25-27 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-28" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/28.webp"/><img src="../img/@2x/28.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Встреча с руководителями Кубы в Президентском дворце.</div>
+				<div>Гавана, 25-27 июля 1961 г. Авт. В. Соболев"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-29" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/29.webp"/><img src="../img/@2x/29.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"На балконе Президентского дворца.</div>
+				<div>Гавана, 25-27 июля 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-30" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/30.webp"/><img src="../img/@2x/30.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Вручение памятного знака в честь кубино-советской дружбы.</div>
+				<div>Гавана, 25-27 июля 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-31" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/31.webp"/><img src="../img/@2x/31.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Гавана, 25-27 июля 1961 г.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-32" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/32.webp"/><img src="../img/@2x/32.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Автограф первого космонавта.</div>
+				<div>Гавана, 25-27 июля 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-33" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/33.webp"/><img src="../img/@2x/33.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Дружеский обмен.</div>
+				<div>Гавана, июль 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-34" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/34.webp"/><img src="../img/@2x/34.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Товарищеская встреча.</div>
+				<div>Гавана, июль 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-35" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/35.webp"/><img src="../img/@2x/35.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Дружеский обед.</div>
+				<div>Гавана, июль 1961 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-36" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/36.webp"/><img src="../img/@2x/36.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Снова на Кубе.</div>
+				<div>Гавана, 10 октября 1963 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-37" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/37.webp"/><img src="../img/@2x/37.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Встреча Фиделя Кастро с советскими космонавтами Юрием Гагариным, Павлом Поповичем, Андрияном Николаевым, Германом Титовым, Валерием Быковским. </div>
+				<div>Москва, Кремль, 1 мая 1964 г. Авт. В. Егоров."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-38" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/38.webp"/><img src="../img/@2x/38.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"«Всесоюзное общество советско-кубинской дружбы создано!» С Эрнесто Че Геварой и председателем Союза советских обществ дружбы и культурных связей с зарубежными странами Н. В. Поповой.</div>
+				<div>Москва, 11 ноября 1964 г."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-39" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/39.webp"/><img src="../img/@2x/39.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Встреча в Доме дружбы с народами зарубежных стран с заместителем премьер-министра Республики Куба Раулем Кастро и космонавтом Владимиром Комаровым.</div>
+				<div>Москва, 1965 г. Авт. В. Савостьянов."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-40" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/40.webp"/><img src="../img/@2x/40.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Подписание Плана научного сотрудничества между СССР и Кубой.</div>
+				<div>Москва, 1965 г. Авт. В. Мастюков."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-41" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/41.webp"/><img src="../img/@2x/41.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Открытие вечера в Доме дружбы с народами зарубежных стран, посвященного 4-й годовщине победы кубинского народа на Плайя-Хирон. </div>
+				<div>Москва, апрель 1965 г. Авт. С. Преображенский."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-42" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/42.webp"/><img src="../img/@2x/42.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Вручение вместе с Послом Республики Куба в СССР Карлосом Оливаресом награды победителю конкурса «Знаете ли вы Кубу?» Зое Соколовой. </div>
+				<div>Москва, 1966 г. Авт. В. Егоров."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-43" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/43.webp"/><img src="../img/@2x/43.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>18 сентября 1980 года сбылось предсказание Юрия Гагарина: на орбиту выведен космический корабль с советско-кубинским экипажем в составе Юрия Романенко и Арнальдо Тамайо Мендесом (с 1999 г.-председатель Ассоциации дружбы Куба-Россия)</div>
+			</div>
+		</div>
+		<script src="../3d/vendor/screenfull.min.js"></script>
+		<script src="../3d/vendor/bowser.min.js"></script>
+		<script src="../3d/vendor/marzipano.js"></script>
+		<script src="../3d/data.js"></script>
+		<script src="../3d/index.js"></script>
+		<!-- modal libs-->
+		<script src="../libs/jquery/jquery.min.js"></script>
+		<script src="../js/TweenMax.min.js"></script>
+		<script src="../libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+		<script src="../libs/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+		<script src="../libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<script src="../js/common.js"></script>
+	</body>
+</html>

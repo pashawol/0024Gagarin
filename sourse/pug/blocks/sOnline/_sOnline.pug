@@ -3,10 +3,11 @@ mixin sOnline(data)
 	+b.SECTION.sOnline.section#sOnline&attributes(attributes)
 		.container
 			+e.inner.bg-wrap
-				img(src="img/@2x/webp/sputnik.webp" alt="").sputnic
+				img(src="../img/@2x/webp/sputnik.webp" alt="").sputnic
 				//+pic('sputnik.png','',0)
 				+pic('online','bg').picture-bg
-				h2 ОНЛАЙН <br> ВЫСТАВКА
-				+e.link(href="/online") Посетить выставку
+				h2!= data.title
+				+e.link(href="online.html")
+					span!= data.link
 					+icon("arrow-right")
 	// end sOnline

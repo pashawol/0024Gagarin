@@ -19,28 +19,33 @@ block pagecontent
 	#stars
 	#stars2 
 	#stars3
-	+mob-mnu()
-	+top-nav()
-	.main-wrapper#main
-		+headerBlock()
-			+b.picture-block--1
+	//- +mob-mnu()
+	//- +top-nav()
+	.main-wrapper
+		+headerBlock( 
+			{
+			title:` ПЕРВЫЙ:<br> ЮРИЙ ГАГАРИН И&nbsp;КУБА`,
+			toptext:`60-ЛЕТИЮ ПИЛОТИРУЕМОЙ КОСМОНАВТИКИ ПОСВЯЩАЕТСЯ`,
+			text:`Онлайн-выставка начинает<br> работу 7&nbsp;апреля 2021 года`
+		} )
+			+b.picture-block--0
 				+pic(`picture-1.jpg`,'','992px')
-				+e.caption Ю. А. Гагарин
+				//- +e.caption Ю. А. Гагарин
 
-			+b.picture-block--2
-				+pic(`picture-2.jpg`,'','992px')
-				+e.caption Ю. А. Гагарин и Эрнесто «Че» Гевара
-			+b.picture-block--3
-				+pic(`picture-3.jpg`,'bg')
+			//- +b.picture-block--2
+			//- 	+pic(`picture-2.jpg`,'','992px')
+			//- 	+e.caption Ю. А. Гагарин и Эрнесто «Че» Гевара
+			//- +b.picture-block--3
+			//- 	+pic(`picture-3.jpg`,'bg')
 
-		+sAbout
-		#trigger1
-			.fixed-block
-				.container
-					p.mb-5 Наш девиз:
-					h2 Solo juntos venceremos! <br>Только вместе победим!
-		+sOnline
-		+sMap
+		//- +sAbout
+		//- #trigger1
+		//- 	.fixed-block
+		//- 		.container
+		//- 			p.mb-5 Наш девиз:
+		//- 			h2 Solo juntos venceremos! <br>Только вместе победим!
+		//- +sOnline
+		//- +sMap
 	+footer()
 
 

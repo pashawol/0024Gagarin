@@ -21,3 +21,57 @@ mixin ie11()
 	//- modernizer and for ie11
 	 
 	<!--[if lt IE 11]><p   class="browsehappy container">К сожалению, вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/" target="_blank">обновите ваш браузер</a>, чтобы улучшить производительность, качество отображаемого материала и повысить безопасность.</p><![endif]-->
+
+
+mixin pano()
+	#pano.mt-5 
+		#sceneList
+			ul.scenes 
+				a.scene(data-id='0-1-copy' href='javascript:void(0)')
+					//- li.text 1 copy
+				a.scene(data-id='1-2-copy' href='javascript:void(0)')
+					//- li.text 2 copy
+				a.scene(data-id='2-3-copy' href='javascript:void(0)')
+					//- li.text 3 copy
+				a.scene(data-id='3-4-copy' href='javascript:void(0)')
+					//- li.text 4 copy
+				a.scene(data-id='4-5-copy' href='javascript:void(0)')
+					//- li.text 5 copy
+				a.scene(data-id='5-6-copy' href='javascript:void(0)')
+					//- li.text 6 copy
+
+mixin onhead()
+	meta(name='viewport', content='target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui')
+
+	style.
+		@-ms-viewport { width: device-width; }
+	link(href='../3d/vendor/reset.min.css' rel='stylesheet')
+	link(href='../3d/style.css' rel='stylesheet')
+mixin on()
+	a#autorotateToggle(href='javascript:void(0)')
+			img.icon.off(src='img/play.png')
+			img.icon.on(src='img/pause.png')
+	a#fullscreenToggle(href='javascript:void(0)')
+		img.icon.off(src='img/fullscreen.png')
+		img.icon.on(src='img/windowed.png')
+	//- a#sceneListToggle(href='javascript:void(0)')
+		//- img.icon.off(src='img/expand.png')
+		//- img.icon.on(src='img/collapse.png')
+	a#viewUp.viewControlButton.viewControlButton-1(href='javascript:void(0)')
+		img.icon(src='img/up.png')
+	a#viewDown.viewControlButton.viewControlButton-2(href='javascript:void(0)')
+		img.icon(src='img/down.png')
+	a#viewLeft.viewControlButton.viewControlButton-3(href='javascript:void(0)')
+		img.icon(src='img/left.png')
+	a#viewRight.viewControlButton.viewControlButton-4(href='javascript:void(0)')
+		img.icon(src='img/right.png')
+	a#viewIn.viewControlButton.viewControlButton-5(href='javascript:void(0)')
+		img.icon(src='img/plus.png')
+	a#viewOut.viewControlButton.viewControlButton-6(href='javascript:void(0)')
+		img.icon(src='img/minus.png')
+mixin onscript()
+	script(src='../3d/vendor/screenfull.min.js')
+	script(src='../3d/vendor/bowser.min.js')
+	script(src='../3d/vendor/marzipano.js')
+	script(src='../3d/data.js')
+	script(src='../3d/index.js')

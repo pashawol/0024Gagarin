@@ -5,7 +5,10 @@
 			@include media-breakpoint-up(xxl) {
 				font-size: rem(30);
 			}
+			@include media-breakpoint-up(xl) {
 				font-size: rem(20);
+			}
+			font-size: rem(18);
 		position: relative;
 		z-index: 4;
 		picture{
@@ -24,10 +27,17 @@
 		 margin-bottom: rem(123);
 
 
-		 &:nth-child(3){
+		 &:nth-child(1){
 			 picture{
+						margin-left: -100px;
+				//  margin-left: -100px;
+			 }
+		 }
 
-				 margin-left: -100px;
+		 &:nth-child(4){
+			 picture{
+						margin-right: -100px;
+				//  margin-left: -100px;
 			 }
 		 }
 			}

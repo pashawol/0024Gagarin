@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Цифровая выставка: 60-летию пилотируемой космонавтики посвящается</title>
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"/>
+		<style>@-ms-viewport { width: device-width; }</style>
+		<link href="../3d/vendor/reset.min.css" rel="stylesheet"/>
+		<link href="../3d/style.css" rel="stylesheet"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="../libs/@fancyapps/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
+		<link href="../css/main.min.css" rel="stylesheet"/>
+	</head>
+	<body class=" multiple-scenes view-control-buttons">
+		<div class="mt-5" id="pano"> 
+			<div id="sceneList">
+				<ul class="scenes"> <a class="scene" data-id="0-1-copy" href="javascript:void(0)"></a><a class="scene" data-id="1-2-copy" href="javascript:void(0)"></a><a class="scene" data-id="2-3-copy" href="javascript:void(0)"></a><a class="scene" data-id="3-4-copy" href="javascript:void(0)"></a><a class="scene" data-id="4-5-copy" href="javascript:void(0)"></a><a class="scene" data-id="5-6-copy" href="javascript:void(0)"></a></ul>
+			</div>
+		</div>
+		<div id="titleBar">
+			<h1 class="h6 sceneName">Цифровая выставка: 60-летию пилотируемой космонавтики посвящается</h1>
+		</div><a id="autorotateToggle" href="javascript:void(0)"><img class="icon off" src="img/play.png"/><img class="icon on" src="img/pause.png"/></a><a id="fullscreenToggle" href="javascript:void(0)"><img class="icon off" src="img/fullscreen.png"/><img class="icon on" src="img/windowed.png"/></a><a class="viewControlButton viewControlButton-1" id="viewUp" href="javascript:void(0)"><img class="icon" src="img/up.png"/></a><a class="viewControlButton viewControlButton-2" id="viewDown" href="javascript:void(0)"><img class="icon" src="img/down.png"/></a><a class="viewControlButton viewControlButton-3" id="viewLeft" href="javascript:void(0)"><img class="icon" src="img/left.png"/></a><a class="viewControlButton viewControlButton-4" id="viewRight" href="javascript:void(0)"><img class="icon" src="img/right.png"/></a><a class="viewControlButton viewControlButton-5" id="viewIn" href="javascript:void(0)"><img class="icon" src="img/plus.png"/></a><a class="viewControlButton viewControlButton-6" id="viewOut" href="javascript:void(0)"><img class="icon" src="img/minus.png"/></a>
+		<div class="modal-win" id="el-1" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/1.webp"/><img src="../img/@2x/1.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+						<p>April 12, 1961  – April 12, 2021</p>
+						<p>All-Russian Public Organization </p>
+						<p class="mb-0"><strong>“The Russian Society for Friendship with Cuba” (RODK)   </strong></p>
+						<p><a href="roscuba.ru" target="_blank"> www.roscuba.ru</a></p>
+						<p class="mb-0"><strong>Russian association of planetariums</strong></p>
+						<p><a href="apr.planetariums.ru" target="_blank"> www.apr.planetariums.ru</a></p>
+						<p class="mb-0"><strong>RUVENTS Digital Products</strong></p>
+						<p><a href="ruvents.com" target="_blank"> www.ruvents.com </a></p>
+						<p>DEDICATED TO THE 60TH ANNIVERSARY OF MANNED COSMONAUTICS. </p>
+						<p>THE FIRST: GAGARIN AND CUBA    </p>
+						<p>Based on the photo album “Invincible-3. To the 85th anniversary of Yury Gagarin ", 2019, RODK (photos provided by TASS Russian News Agency) </p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-2" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/2.webp"/><img src="../img/@2x/2.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+						<p>April 12, 1961  – April 12, 2021</p>
+						<p>All-Russian Public Organization </p>
+						<p class="mb-0"><strong>“The Russian Society for Friendship with Cuba” (RODK)   </strong></p>
+						<p><a href="roscuba.ru" target="_blank"> www.roscuba.ru</a></p>
+						<p class="mb-0"><strong>Russian association of planetariums</strong></p>
+						<p><a href="apr.planetariums.ru" target="_blank"> www.apr.planetariums.ru</a></p>
+						<p class="mb-0"><strong>RUVENTS Digital Products</strong></p>
+						<p><a href="ruvents.com" target="_blank"> www.ruvents.com </a></p>
+						<p>DEDICATED TO THE 60TH ANNIVERSARY OF MANNED COSMONAUTICS. </p>
+						<p>THE FIRST: GAGARIN AND CUBA    </p>
+						<p>Based on the photo album “Invincible-3. To the 85th anniversary of Yury Gagarin ", 2019, RODK (photos provided by TASS Russian News Agency) </p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-3" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/3.webp"/><img src="../img/@2x/3.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+						<p>April 12, 1961  – April 12, 2021</p>
+						<p>All-Russian Public Organization </p>
+						<p class="mb-0"><strong>“The Russian Society for Friendship with Cuba” (RODK)   </strong></p>
+						<p><a href="roscuba.ru" target="_blank"> www.roscuba.ru</a></p>
+						<p class="mb-0"><strong>Russian association of planetariums</strong></p>
+						<p><a href="apr.planetariums.ru" target="_blank"> www.apr.planetariums.ru</a></p>
+						<p class="mb-0"><strong>RUVENTS Digital Products</strong></p>
+						<p><a href="ruvents.com" target="_blank"> www.ruvents.com </a></p>
+						<p>DEDICATED TO THE 60TH ANNIVERSARY OF MANNED COSMONAUTICS. </p>
+						<p>THE FIRST: GAGARIN AND CUBA    </p>
+						<p>Based on the photo album “Invincible-3. To the 85th anniversary of Yury Gagarin ", 2019, RODK (photos provided by TASS Russian News Agency) </p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-4" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/4.webp"/><img src="../img/@2x/4.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>The first cosmonaut of the planet Yuri Alekseevich Gagarin - since 1961 the first holder of the national order of the Republic of Cuba "Playa Girón" and in 1964-1968 the first president of the All-Union Society of Soviet-Cuban friendship (WOSKD). Under his leadership and with direct participation the goals, directions and principles of the Society's activities were determined, its structure and staff were formed. Yuri Gagarin, who triumphantly visited about 30 countries, could head any friendship society. He has chosen Cuba. 3 visits to Cuba, friendship with the legendary Fidel Castro and Ernesto Che Guevara, meetings with Cubans, development of WOSKD - became a bright page in his life. The Russian Society for Friendship with Cuba (RODK), as the successor to WOSKD, keeps the memory of its first president and his enormous contribution to the creation of the foundations and traditions of Soviet-Cuban and Russian-Cuban friendship. Our motto: Solo juntos venceremos! Only together we will win! </p>
+				<p>With Ernesto Che Guevara at the founding meeting of WOSKD in Moscow. November 11, 1964. Author V. Musaelyan a</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-5" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/5.webp"/><img src="../img/@2x/5.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>With President of the Republic of Cuba Osvaldo Dorticós and Prime Minister of the Republic of Cuba Fidel Castro during a meeting at the airport. Havana, July 24, 1961 Author V. Sobolev</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-6" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/6.webp"/><img src="../img/@2x/6.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>"Two majors, two commanders. The first meeting. <br>Havana, 24 July 1961"</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-7" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/7.webp"/><img src="../img/@2x/7.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<p>"Havana meets the first cosmonaut of the planet. Revolution Square.<br>July 24, 1961 Author V. Sobolev"</p>
+			</div>
+		</div>
+		<div class="modal-win" id="el-8" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/8.webp"/><img src="../img/@2x/8.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>While visiting a military hospital</div>
+				<div>Havana, July 26, 1961. Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-9" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/9.webp"/><img src="../img/@2x/9.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Meeting with a wounded participant in the battles in the Playa Girón. Havana, July 26, 1961. Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-10" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/10.webp"/><img src="../img/@2x/10.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Meeting with a wounded participant in the battles in the Playa Girón. Havana, July 26, 1961. Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-11" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/11.webp"/><img src="../img/@2x/11.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"”Wow! It’s Gagarin himself!” </div>
+				<div>Havana, July 26, 1961. Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-12" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/12.webp"/><img src="../img/@2x/12.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Havana, July 26, 1961. </div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-13" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/13.webp"/><img src="../img/@2x/13.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"“This is how the Cuban astronaut will fly space!"" </div>
+				<div>Havana, July 26, 1961 Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-14" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/14.webp"/><img src="../img/@2x/14.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Havana, July 26, 1961</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-15" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/15.webp"/><img src="../img/@2x/15.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Warm welcoming.</div>
+				<div>Havana, July 26, 1961. Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-16" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/16.webp"/><img src="../img/@2x/16.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>On the podium during the celebration of the 8th anniversary of the start of Cuban people’s revolution with Fidel Castro and Osvaldo Dorticós.         Havana, July 26, 1961 Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-17" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/17.webp"/><img src="../img/@2x/17.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"“How long have you been in space?  Almost 2 hours? Keep time, I will talk longer!"" </div>
+				<div>Havana, July 26, 1961 Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-18" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/18.webp"/><img src="../img/@2x/18.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Havana, July 26, 1961.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-19" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/19.webp"/><img src="../img/@2x/19.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>At a meeting of the Cuban-Soviet friendship on Revolution Square. Havana, July 26, 1961 Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-20" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/20.webp"/><img src="../img/@2x/20.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Presentation of the National Order of “Playa Girón” №1. </div>
+				<div>Havana, July 26, 1961 Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-21" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/21.webp"/><img src="../img/@2x/21.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Congratulations on being awarded the Order of “Playa Girón”. </div>
+				<div>Havana. Revolution Square, July 26, 1961. Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-22" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/22.webp"/><img src="../img/@2x/22.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Havana. Revolution Square, July 26, 1961. Author V. Sobolev</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-23" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/23.webp"/><img src="../img/@2x/23.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Rally at the Revolution Square.</div>
+				<div>Havana, July 26, 1961."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-24" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/24.webp"/><img src="../img/@2x/24.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"On the Revolution Square with the leaders of the Republic of Cuba and the Cuban revolutionary, historian and geographer Antonio Núñez Jiménez (in 1962-1972 the president of the Cuban Academy of sciences, in 1969-1972 president of the Association of Cuban-Soviet Friendship). </div>
+				<div>Havana, July 26, 1961"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-25" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/25.webp"/><img src="../img/@2x/25.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"With Osvaldo Dorticós, USSR ambassador of the Republic of Cuba S. M. Kudryavtsev and Hero of the Soviet Union (1934), lieutenant general of aviation, head of the selection and training of the first Soviet cosmonauts N. P. Kamanin. </div>
+				<div>Havana,  July 25-27, 1961"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-26" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/26.webp"/><img src="../img/@2x/26.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Meeting with Fidel Castro.</div>
+				<div>Havana, July 25-27, 1961</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-27" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/27.webp"/><img src="../img/@2x/27.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Meeting with Osvaldo Dorticós at the Presidential Palace. </div>
+				<div>Havana,  July 25-27, 1961 Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-28" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/28.webp"/><img src="../img/@2x/28.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Meeting with the leaders of Cuba at the Presidential Palace. </div>
+				<div>Havana,  July 25-27, 1961 Author V. Sobolev"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-29" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/29.webp"/><img src="../img/@2x/29.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"On the balcony of the Presidential Palace.</div>
+				<div>Havana, July 25-27, 1961."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-30" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/30.webp"/><img src="../img/@2x/30.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Presentation of a memorial sign in honor of the Cuban-Soviet friendship.</div>
+				<div>Havana,  July 25-27, 1961."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-31" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/31.webp"/><img src="../img/@2x/31.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Havana, July 25-27, 1961.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-32" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/32.webp"/><img src="../img/@2x/32.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Autograph of the first astronaut</div>
+				<div>Havana, July 25-27, 1961."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-33" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/33.webp"/><img src="../img/@2x/33.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Friendly exchange</div>
+				<div>Havana, July 1961"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-34" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/34.webp"/><img src="../img/@2x/34.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Meeting between comrades</div>
+				<div>Havana, July 1961"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-35" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/35.webp"/><img src="../img/@2x/35.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Friendly lunch</div>
+				<div>Havana, July 1961"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-36" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/36.webp"/><img src="../img/@2x/36.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Back in Cuba</div>
+				<div>Havana, October 10, 1963."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-37" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/37.webp"/><img src="../img/@2x/37.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Meeting of Fidel Castro with Soviet cosmonauts Yuri Gagarin, Pavel Popovich, Andriyan Nikolaev, German Titov, Valery Bykovsky. Moscow, Kremlin, May 1, 1964 Author V. Egorov.</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-38" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/38.webp"/><img src="../img/@2x/38.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"“The All-Union Society of soviet-cuban friendship has been created!” - With Ernesto Che Guevara and N.V Popova, chairman of the Union of soviet societies for friendship and cultural relations with foreign countries. </div>
+				<div>Moscow, November 11, 1964 "</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-39" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/39.webp"/><img src="../img/@2x/39.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Meeting at the House of friendship with the peoples of foreign countries with the deputy prime minister of the Republic of Cuba Raul Castro and cosmonaut Vladimir Komarov. </div>
+				<div>Moscow, 1965, Author V. Savostyanov."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-40" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/40.webp"/><img src="../img/@2x/40.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>Signing the Plan of scientific cooperation between the USSR and Cuba. </div>
+				<div>Moscow, 1965, Author V. Mastyukov.между СССР и Кубой. </div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-41" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/41.webp"/><img src="../img/@2x/41.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Opening of the evening at the House of friendship with the peoples of foreign countries, dedicated to the 4th anniversary of the Cuban’s victory at Playa Giron. </div>
+				<div>Moscow, April 1965 Author S. Preobrazhensky"</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-42" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/42.webp"/><img src="../img/@2x/42.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>"Presenting, together with the Ambassador of the Republic of Cuba in the USSR Carlos Olivares, an award to the winner of the competition “Do You Know Cuba?” Zoya Sokolova.</div>
+				<div>Moscow, 1966, Author V. Egorov."</div>
+			</div>
+		</div>
+		<div class="modal-win" id="el-43" style="display: none"> 
+			<!-- picture-->
+			<picture> 
+				<source type="image/webp" srcset="../img/@2x/webp/43.webp"/><img src="../img/@2x/43.jpg" alt="" loading="lazy"/>
+			</picture>
+			<!-- /picture-->
+			<div class="modal-win__caption">
+				<div>On September 18, 1980, Yuri Gagarin's prediction came true: a spacecraft with a soviet-cuban crew consisting of Yuri Romanenko and Arnaldo Tamayo Mendes (since 1999 - chairman of the Cuba-Russia Friendship Association) was launched into orbit.</div>
+			</div>
+		</div>
+		<script src="../3d/vendor/screenfull.min.js"></script>
+		<script src="../3d/vendor/bowser.min.js"></script>
+		<script src="../3d/vendor/marzipano.js"></script>
+		<script src="../3d/data.js"></script>
+		<script src="../3d/index.js"></script>
+		<!-- modal libs-->
+		<script src="../libs/jquery/jquery.min.js"></script>
+		<script src="../js/TweenMax.min.js"></script>
+		<script src="../libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+		<script src="../libs/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+		<script src="../libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<script src="../js/common.js"></script>
+	</body>
+</html>

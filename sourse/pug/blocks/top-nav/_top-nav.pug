@@ -1,25 +1,17 @@
-mixin mob-mnu()
-	-
-		//- let path = require('path');
-		//- let fs = require('fs');
-		//- var requestURL = 'top-nav.json';
-		//- var request = new XMLHttpRequest();
-		//- request.open('GET', requestURL);
-		//- request.responseType = 'json';
-		//- let dataJson = JSON.parse(json);
-	//- h1= dataJson['lala'] 
-	+b.menu-mobile--js.d-lg-none
-		+b.toggle-menu-mobile--js.on
-			span
-		+e.inner
-
-		
-			+mnu()
-			.text-right
-	//  мобильное меню
-mixin top-nav() 
+mixin top-nav(data)
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			+mnu()
+			ul.menu
+				li.menu-item
+					a.menu-link(href="#main")= data.link1
+				li.menu-item
+					a.menu-link(href="#sAbout")= data.link2
+				li.menu-item
+					a.menu-link(href="#sOnline")= data.link3
+				li.menu-item
+					a.menu-link(href="#map")= data.link4
+				li.menu-item.menu-item-has-children
+					
+					block
 	// end top-nav
