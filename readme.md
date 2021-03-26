@@ -1,4 +1,2 @@
-1. Отключил lazy плагин. Поставил  loading="lazy"
-
-
-rm -rf node_modules
+1. <https://pashawol.github.io/0024Gagarin/public/>
+2. <https://pashawol.github.io/0024Gagarin/public/online>
