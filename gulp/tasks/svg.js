@@ -2,12 +2,12 @@ module.exports = function () {
     let dest = '../_sprite.scss'
     $.gulp.task('svg', () => {
         return $.gulp.src('./' + $.sourse + '/svg/*.svg')
-            .pipe($.gp.svgmin({
+            .pipe($.svgmin({
                 js2svg: {
                     pretty: true
                 }
             }))
-            .pipe($.gp.cheerio({
+            .pipe($.cheerio({
                 run: function ($) {
                     $('[fill]').removeAttr('fill');
                     $('[stroke]').removeAttr('stroke');
@@ -16,8 +16,8 @@ module.exports = function () {
                 },
                 parserOptions: { xmlMode: true }
             }))
-            .pipe($.gp.replace('&gt;', '>'))
-            .pipe($.gp.svgSprite({
+            .pipe($.replace('&gt;', '>'))
+            .pipe($.svgSprite({
                 shape: {
                     dimension: {         // Set maximum dimensions
                         maxWidth: 500,

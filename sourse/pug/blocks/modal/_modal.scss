@@ -2,9 +2,22 @@
 	// display: block;
 	width: 100%;
 	position: relative;
-	max-width: rem(900);
 	--body-color: #000;
 	color: #000;
+	padding: 0;
+	background-color: $light;
+	@include media-breakpoint-up(xl) {
+	// max-width: rem(1500);
+}
+max-width: rem(980);
+
+	&__caption{
+		@include media-breakpoint-up(xl) {
+
+			// padding: rem(20) rem(40);
+		}
+		padding: rem(20) rem(20);
+	}
 
 	.modal-content {
 		// max-width: 485px;
@@ -92,7 +105,10 @@ a {
 	}
 }
 
-
+.fancybox-slide--html .fancybox-close-small {
+	// color: #fff;
+	background-color: $light;
+}
 // 
 @include media-breakpoint-up(xl) {}
 

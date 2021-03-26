@@ -83,65 +83,7 @@ const JSCCommon = {
 	},
 	// /mobileMenu
 
-	// tabs  .
-	tabscostume(tab) {
-		const tabs = document.querySelectorAll(".tabs");
-		const indexOf = element => Array.from(element.parentNode.children).indexOf(element);
-		tabs.forEach(element => {
-			let tabs = element;
-			const tabsCaption = tabs.querySelector(".tabs__caption");
-			const tabsBtn = tabsCaption.querySelectorAll(".tabs__btn");
-			const tabsWrap = tabs.querySelector(".tabs__wrap");
-			const tabsContent = tabsWrap.querySelectorAll(".tabs__content");
-			const random = Math.trunc(Math.random() * 1000);
-			tabsBtn.forEach((el, index) => {
-				const tabIndex = `tab-content-${random}-${index}`;
-				el.dataset.tabBtn = tabIndex;
-			})
-			tabsContent.forEach((el, index) => {
-				const tabIndex = `tab-content-${random}-${index}`;
-				el.dataset.tabContent = tabIndex;
-				const active = el.classList.contains('active') ? 'active' : '';
-				console.log(tabsBtn[index].innerHTML);
-				el.insertAdjacentHTML("beforebegin", `<div class="tabs__btn-accordion  btn btn-primary d-block mb-1 ${active}" data-tab-btn="${tabIndex}">${tabsBtn[index].innerHTML}</div>`)
-			})
-			document.addEventListener('click', function (element) {
-				const btn = element.target.closest(`[data-tab-btn]:not(.active)`);
-				if (!btn) return;
-				const data = btn.dataset.tabBtn;
-				const tabsAllBtn = btn.closest('.tabs').querySelectorAll(`[data-tab-btn`);
-				const content = btn.closest('.tabs').querySelectorAll(`[data-tab-content]`);
-				tabsAllBtn.forEach(element => {
-					element.dataset.tabBtn == data
-						? element.classList.add('active')
-						: element.classList.remove('active')
-				});
-				content.forEach(element => {
-					element.dataset.tabContent == data
-						? (element.classList.add('active'), element.previousSibling.classList.add('active'))
-						: element.classList.remove('active')
-				});
-			})
-		})
-
-		// $('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
-		// 	$(this)
-		// 		.addClass('active').siblings().removeClass('active')
-		// 		.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
-		// 		.eq($(this).index()).fadeIn().addClass('active');
-
-		// });
-
-	},
-	// /tabs
-
-	inputMask() {
-		// mask for input
-		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
-		InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
-		Inputmask("+9(999)999-99-99").mask(InputTel);
-	},
-	// /inputMask
+ 
 	ifie() {
 		var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 		if (isIE11) {
@@ -183,10 +125,8 @@ const $ = jQuery;
 
 function eventHandler() {
 	JSCCommon.ifie();
-	JSCCommon.modalCall();
-	JSCCommon.tabscostume('.tabs--js');
-	JSCCommon.mobileMenu();
-	JSCCommon.inputMask();
+	JSCCommon.modalCall(); 
+	JSCCommon.mobileMenu(); 
 	JSCCommon.heightwindow();
 	JSCCommon.animateScroll();
 
@@ -224,17 +164,17 @@ function eventHandler() {
 
 	let height = window.innerHeight;
 	var tween = new TimelineMax()
-		.from(".picture-block--1", 100, { y: height / 1.8 ,duration: 1500,})
+		.from(".picture-block--1", 3000, { y: height / 1.8 ,duration: 1500,})
 		.from(".picture-block--1 .picture-block__caption", 10, { opacity: 0 ,duration: 1500,})
-		.from(".picture-block--2", 200, { y: height ,duration: 1500,})
+		.from(".picture-block--2", 3000, { y: height ,duration: 1500,})
 		.to(".picture-block--1 .picture-block__caption", 10, { opacity: 0 ,duration: 1500,})
 		.to(".picture-block--2 .picture-block__caption", 10, { x: '50%', opacity: 0 ,duration: 1500,})
-		.to(".picture-block--2 ", 100, { scale: '.8', x: '10%' ,duration: 1500,})
-		.from(".picture-block--3", 200, { y: height, delay: -1 ,duration: 1500,})
-		.from(".picture-block--3", 200, { scale: '.5', x: '-10%' ,duration: 1500,})
+		.to(".picture-block--2 ", 3000, { scale: '.8', x: '10%' ,duration: 1500,})
+		.from(".picture-block--3", 3000, { y: height, delay: -1 ,duration: 1500,})
+		.from(".picture-block--3", 3000, { scale: '.5', x: '-10%' ,duration: 1500,})
 		.to(".picture-block--1, .picture-block--2", 100, { opacity: 0, delay: -50 ,duration: 1500,})
-		.to(".headerBlock__block", 100, { opacity: 0,  duration: 1500,})
-		.to(".picture-block--3", 100, { opacity: .4, delay: -50 ,duration: 1500,})
+		.to(".headerBlock__block", 3000, { opacity: 0,  duration: 1500,})
+		.to(".picture-block--3", 3000, { opacity: .4, delay: -50 ,duration: 1500,})
 	// build scene
 	new ScrollMagic
 		.Scene({ triggerElement: ".headerBlock", triggerHook: "onLeave", duration: '500%', offset: '0%' })
@@ -243,9 +183,9 @@ function eventHandler() {
 		// .addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
 	var tween2 = new TimelineMax()
-		.to(".fixed-block p", 1, {y: '-50%', opacity:0 ,duration: 1500,})
-		.to(".picture-block--3", 100, { opacity: .2 ,duration: 1500,})
-		.to(".fixed-block , .picture-block--3", 100, { y: '-100%' ,duration: 1500,})
+		.to(".fixed-block p", 3000, {y: '-50%', opacity:0 ,duration: 1500,})
+		.to(".picture-block--3", 3000, { opacity: .2 ,duration: 1500,})
+		.to(".fixed-block , .picture-block--3", 3000, { y: '-100%' ,duration: 1500,})
 
 	let scene2 = new ScrollMagic
 		.Scene({
@@ -260,8 +200,8 @@ function eventHandler() {
 		.addTo(controller);
 
 	var tween3 = new TimelineMax()
-		.from(".sMap h2", 1, {opacity:0 ,duration: 1500,})
-		.from(".map-block", 1, {y: '50%', opacity:0 ,duration: 1500,})
+		.from(".sMap h2", 2000, {opacity:0 ,duration: 1500,})
+		.from(".map-block", 2000, {y: '50%', opacity:0 ,duration: 1500,})
 	let scene3 = new ScrollMagic
 		.Scene({
 			triggerElement: "#sMap",

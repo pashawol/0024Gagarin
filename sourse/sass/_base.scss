@@ -505,3 +505,29 @@ iframe {
 	.info-hotspot-icon-wrapper{
 		display: block;
 	}
+
+
+	// [href="#el-1"]{
+	// 	position: absolute;
+	// 	top: 50px;
+	// 	z-index: 2000;
+	// 	left: 50px;
+	// }
+
+
+	.info-hotspot-header{
+		div{
+			display: none !important;
+		}
+	}
+
+	.info-hotspot{
+		&:not(:hover) {
+			// opacity: 0.5;
+		}
+	}
+	.info-hotspot .info-hotspot-header,
+	.info-hotspot .info-hotspot-icon-wrapper{
+		width: 30px;
+		height: 30px;
+	}

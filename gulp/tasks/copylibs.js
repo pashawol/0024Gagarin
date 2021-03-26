@@ -5,7 +5,7 @@ module.exports = function (){
 		return $.del([$.public + '/libs'], { force: true })
 	});
 	$.gulp.task('copylibs', function () {
-		return  	$.gulp.src($.gp.npmDist({ 
+		return  	$.gulp.src($.npmDist({ 
 				// copyUnminified: true, 
 				excludes: [
 				'*.map',
@@ -44,7 +44,7 @@ module.exports = function (){
 				'*.sass',
 				'*.less'] 
 		}), { base: './node_modules' })
-		.pipe($.gp.rename(function(path) {
+		.pipe($.rename(function(path) {
 			path.dirname = path.dirname.replace(/\/dist/, '').replace(/\\dist/, '');
 	}))
 				.pipe($.gulp.dest($.public + '/libs'));

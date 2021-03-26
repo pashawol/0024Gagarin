@@ -23,22 +23,18 @@ const fileSources = {
 				
 			.row
 	// end {blockName}`,
-	scss: `
-	// start .{blockName}
-	.{blockName} \{
+	scss: `// start .{blockName}
+.{blockName} \{
 		// --sPT: ;
 		// --sPB: ;
 		// --sTPB: ;
-		 
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
 	@include media-breakpoint-up(sm) {}
-	//
-	@include media-breakpoint-between(md, xl) { }
-	//
+	@include media-breakpoint-between(md, xl) {}
 	@include media-breakpoint-only(xl) {}
-	//
 	@include media-breakpoint-down(xl) {}
 } // end.{blockName}`
 	,

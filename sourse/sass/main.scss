@@ -90,7 +90,11 @@ $output-bourbon-deprecation-warnings: false;
 
 
 @import "root";
+
+
+@import "stars";
 @import "base";
+
 @import '../pug/blocks/**/*.scss';
 @import "media"; // Всегда в конце
 

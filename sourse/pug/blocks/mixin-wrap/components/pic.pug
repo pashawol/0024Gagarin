@@ -1,6 +1,6 @@
 - let webpImage= true
 - let webpFormat= (webpImage== true ? 'webp' : null)
-mixin pic(i, bg,  media='576px')
+mixin pic(i, bg,  media='576px',pathInner)
 	-
 		const smpath2 = "2x"
 		const smpath1 = "1x"
@@ -8,7 +8,7 @@ mixin pic(i, bg,  media='576px')
 		let exp = (expArr[1] || 'jpg')
 	mixin src(i, exp, path ,   source, bg)
 		-
-			const url= `img/@${path}/${expArr[0]}.${exp}`
+			const url= `${pathInner}img/@${path}/${expArr[0]}.${exp}`
 
 		if source
 			source(type=`image/${exp}` srcset=url)&attributes(attributes)
