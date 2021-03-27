@@ -242,7 +242,7 @@ function eventHandler() {
 	});
 	var scene3 = new ScrollMagic.Scene({
 		triggerElement: "#sMap",
-		duration: "150%" // offset: '0%',
+		duration: "100%" // offset: '0%',
 		// triggerHook: 'onLeave',
 
 	}).setTween(tween3) // .setPin(".fixed-block")

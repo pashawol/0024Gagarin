@@ -205,7 +205,7 @@ function eventHandler() {
 	let scene3 = new ScrollMagic
 		.Scene({
 			triggerElement: "#sMap",
-			duration: "150%",
+			duration: "100%",
 			// offset: '0%',
 			// triggerHook: 'onLeave',
 		})
