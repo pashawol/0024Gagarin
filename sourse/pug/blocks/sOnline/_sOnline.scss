@@ -1,91 +1,106 @@
-
-	// start .sOnline
-	.sOnline {
-		.sputnic{
-
-			bottom: 0;
-			right: 0;
-			transform: translate(100px, 200px);
-			position: absolute;
+// start .sOnline
+.sOnline {
+	.sputnic {
+		bottom: 0;
+		right: 0;
+		transform: translate(100px, 200px);
+		position: absolute;
+		pointer-events: none;
+	}
+	// --sPT: ;
+	// --sPB: ;
+	// --sTPB: ;
+	@include media-breakpoint-up(lg) {
+		--py: #{rem(100)};
+	}
+	--py: #{rem(30)};
+	&__inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: rem(1400);
+		min-height: calc(var(--py) * 2 + #{rem(232)});
+		h2 {
+			display: inline-block;
+			max-width: rem(200);
 			pointer-events: none;
 		}
-		// --sPT: ;
-		// --sPB: ;
-		// --sTPB: ;
+		@include media-breakpoint-up(sm) {
+			min-height: calc(var(--py) * 2 + #{rem(432)});
+			padding: var(--py) calc(var(--py) + #{rem(44)});
+		}
+		padding: var(--py) calc(var(--py));
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #000;
+		position: relative;
+		> iframe {
+			height: 100% !important;
+			width: 100% !important;
+			left: 0;
+			top: 0;
+			position: absolute !important;
+			z-index: -1;
+			opacity: 0.4;
+			&:focus {
+				opacity: 1;
+			}
+		}
+		.picture-bg {
+			opacity: 0.4;
+		}
+	}
+	&__text {
+		font-weight: normal;
+		line-height: 100%;
+		font-size: rem(12);
+		margin-bottom: rem(10);
+		@include media-breakpoint-up(sm) {
+			font-size: rem(16);
+		}
 		@include media-breakpoint-up(lg) {
-
-		--py: #{rem(100)};
+			font-size: rem(20);
+			margin-bottom: rem(25);
 		}
-		--py: #{rem(30)};
-		&__inner{
-			margin-left: auto;
-			margin-right: auto;
-			max-width: rem(1400);
-			min-height:  calc(var(--py) *2 + #{rem(232)});
-			h2{
-				display: inline-block;
-				max-width: rem(200);
-					pointer-events: none;
-			}
-			@include media-breakpoint-up(sm) {
-				min-height:  calc(var(--py) *2 + #{rem(432)});
-				padding: var(--py) calc(var(--py) + #{rem(44)});
-			}
-				padding: var(--py) calc(var(--py));
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			background-color: #000;
-			position: relative;
-			> iframe {
-				height: 100% !important;
-				width: 100% !important;
-				left: 0;
-				top: 0;
-				position: absolute !important;
-				z-index: -1;
-				opacity: 0.4;
-				&:focus{
-					opacity: 1;
-				}
-			}
-			.picture-bg {
-				opacity: 0.4;
-			}
-		}
-		&__link{
-			font-weight: 900;
-			@include media-breakpoint-up(sm) {
-
+	}
+	&__link {
+		font-weight: 900;
+		@include media-breakpoint-up(sm) {
 			font-size: rem(30);
-			}
-			color: var(--body-color) ;
-			&:hover{
-				.icon{
-					transform: translateX(10%);
-					stroke-width: 2px;
-				}
-			}
-			.icon{
-				@include mt;
-				margin-left: em(10);
-				font-size: 1em;
-				fill: transparent;
-				stroke: currentColor;
+		}
+		color: var(--body-color);
+		&:hover {
+			.icon {
+				transform: translateX(10%);
 				stroke-width: 2px;
 			}
 		}
-		 
+		.icon {
+			@include mt;
+			margin-left: em(10);
+			font-size: 1em;
+			fill: transparent;
+			stroke: currentColor;
+			stroke-width: 2px;
+		}
+	}
+
 	@include media-breakpoint-up(xl) {
 		margin-top: calc(-1 * var(--h) / 2);
 	}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
 	//
-	@include media-breakpoint-between(md, xl) { }
+	@include media-breakpoint-between(md, xl) {
+	}
 	//
-	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-only(xl) {
+	}
 	//
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sOnline
