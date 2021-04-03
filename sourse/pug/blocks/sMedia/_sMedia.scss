@@ -1,0 +1,205 @@
+// start .sMedia
+.sMedia {
+	// --sPT: ;
+	// --sPB: ;
+	// --sTPB: ;
+	.section-title {
+		padding-bottom: rem(35);
+		@include media-breakpoint-up(xl) {
+			padding-bottom: rem(60);
+		}
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sMedia
+
+.media-slider {
+	@include media-breakpoint-up(xl) {
+		max-width: rem(1400);
+	}
+
+	&__link {
+		@include block(878, 475);
+		position: relative;
+		max-width: rem(878);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(20);
+		@include media-breakpoint-up(sm) {
+			margin-bottom: rem(30);
+		}
+		img {
+			@include a-cent(y);
+			left: 5%;
+			width: 75%;
+			height: auto;
+			margin-right: auto;
+			z-index: -1;
+		}
+		&::before {
+			content: "";
+			background-image: url(../img/@2x/tv-vintage.png);
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		&::after {
+			content: "";
+			@include mt;
+			@include a-cent(y);
+			left: 37%;
+			width: 10%;
+			max-height: rem(88);
+			background-image: url(../img/svg/play.svg);
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		&:hover {
+			&.media-slider__link::after {
+				opacity: 0.8;
+			}
+		}
+	}
+	&__btn {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: flex-end;
+		min-width: rem(120);
+		color: $white;
+		z-index: 11;
+		top: 97%;
+		height: rem(30);
+		min-width: rem(30);
+		width: rem(30);
+		@include media-breakpoint-up(sm) {
+			top: 87%;
+			height: rem(60);
+			min-width: rem(60);
+		}
+		@include media-breakpoint-up(md) {
+			top: 90%;
+		}
+		@include media-breakpoint-up(xl) {
+			top: 39%;
+			height: rem(165);
+			width: rem(120);
+		}
+		span {
+			display: none;
+			font-weight: 500;
+			font-size: rem(14);
+			line-height: (17 / 14);
+			text-align: center;
+			padding-top: rem(30);
+			letter-spacing: -0.3px;
+			@include media-breakpoint-up(xl) {
+				display: inline-block;
+			}
+		}
+		&::after {
+			content: "";
+			background-image: url(../img/svg/shevron-left.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: rem(30);
+			height: rem(30);
+			@include media-breakpoint-up(sm) {
+				width: rem(60);
+				height: rem(60);
+			}
+			@include media-breakpoint-up(xl) {
+				width: rem(40);
+				height: rem(80);
+			}
+		}
+	}
+	.swiper-button-prev {
+		left: rem(20);
+		@include media-breakpoint-up(sm) {
+			left: rem(10);
+		}
+		@include media-breakpoint-up(lg) {
+			left: rem(60);
+		}
+		@include media-breakpoint-up(xl) {
+			left: 0;
+		}
+	}
+	.swiper-button-next {
+		right: rem(20);
+		@include media-breakpoint-up(sm) {
+			right: rem(10);
+		}
+		@include media-breakpoint-up(lg) {
+			right: rem(60);
+		}
+		@include media-breakpoint-up(xl) {
+			right: 0;
+		}
+		&::after {
+			transform: rotate(180deg);
+		}
+	}
+	&__pagination {
+		@include media-breakpoint-down(xl) {
+			bottom: 0 !important;
+		}
+		.swiper-pagination-bullet {
+			position: relative;
+			width: rem(8);
+			height: rem(8);
+			text-align: center;
+			line-height: 100%;
+			opacity: 1;
+			background: #c4c4c4;
+			margin: 0 rem(20) !important;
+			@include media-breakpoint-up(sm) {
+				margin: 0 rem(15) !important;
+			}
+			@include media-breakpoint-up(xl) {
+				margin: 0 rem(10) !important;
+			}
+			&::before {
+				content: "";
+				@include a-cent(y);
+				width: rem(30);
+				height: rem(30);
+				background-color: transparent;
+				transform: translateX(-50%);
+			}
+		}
+
+		.swiper-pagination-bullet-active {
+			background: $white;
+		}
+	}
+	&__caption {
+		font-style: normal;
+		font-weight: 500;
+		font-size: rem(14);
+		line-height: (20 / 16);
+		text-align: center;
+		margin-bottom: rem(35);
+		@include media-breakpoint-up(sm) {
+			font-size: rem(16);
+			margin-bottom: rem(40);
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: rem(20);
+			margin-bottom: rem(50);
+		}
+	}
+}

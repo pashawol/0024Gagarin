@@ -126,6 +126,18 @@ body {
 
 .section-title {
 	padding-bottom: var(--sTPB);
+	
+	&--sm {
+		h2 {
+			@include rfs(55px);
+			font-weight: 900;
+			line-height: 100%;
+			text-transform: uppercase;
+			@include media-breakpoint-up(xl) {
+				font-size: rem(60);
+			}
+		}
+	}
 }
 
 h2{
@@ -490,9 +502,9 @@ iframe {
 }
 
 
-.3d-iframe{
-	  height: 500px;
-  }
+// .3d-iframe{
+// 	  height: 500px;
+//   }
 
 	body.multiple-scenes #titleBar {
 		left: 0;

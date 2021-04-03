@@ -6,6 +6,9 @@ include ../../blocks/sContact/_sContact.pug
 include ../../blocks/sAbout/_sAbout.pug
 include ../../blocks/sOnline/_sOnline.pug
 include ../../blocks/sMap/_sMap.pug
+include ../../blocks/sGreeting/_sGreeting.pug
+include ../../blocks/sMedia/_sMedia.pug
+
 
 block variables
 	- let  mainPage= null 
@@ -14,6 +17,11 @@ block variables
 		let la= "es"
 	meta(name="description", content="о чем страница")
 	meta(name="keywords" content="exposición, Expo, conferencia, medida, evento, digital, virtual, en línea, móvil, interactivo, registro, acreditación, exposición digital, Expo digital, conferencia digital, evento digital, evento digital, registro digital, acreditación digital, soluciones digitales, servicios digitales, servicios digitales, plataforma digital, exposición virtual, Expo virtual, conferencia virtual, evento virtual, evento virtual, registro virtual, acreditación virtual, soluciones virtuales, servicios virtuales, servicios virtuales, plataforma virtual, Exposición 3D, Expo 3D, Conferencia 3D, Evento 3D, Evento 3D, Registro 3D, Acreditación 3D, Soluciones 3D, Servicios 3D, Servicios 3D, Plataforma 3D, exposición en línea, Expo en línea, conferencia en línea, evento en línea, evento en línea, registro en línea, acreditación en línea, soluciones en línea, servicios en línea, servicios en línea, registro móvil, acreditación móvil, servicios interactivos, servicios interactivos, soluciones interactivas, servicios de registro, servicios de registro, soluciones de registro, foto, vídeo, foto evento, foto evento, exposición fotográfica, fotoexpo, exposición de fotografías, astronauta, cosmonauta, primer astronauta, República de Cuba, La Habana, La Plaza de la Revolución, Playa Girón, cosmos, primero, primero en el espacio, Rusia, Federación de Rusia, Moscú, Nave espacial Vostok, Amistad, Amistad Ruso-Cubana, Amistad Cubano-Rusa, 12 de abril, Aniversario, La 60., 60 Aniversario, Méndez, Arnaldo Tamayo Méndez, SARC, La Sociedad rusa de la amistad con Cuba, Asociación de planetarios de Rusia, Planetario, Agencia de noticias rusa TASS")
+	meta(property='og:title' content='Exposición virtual: dedicado al sexagésimo aniversario del vuelo espacial tripulado')
+	meta(property='og:site_name' content='Primero: Gagarin y Cuba')
+	meta(property='og:url' content='https://gagarin2021.ru/esp/')
+	meta(property='og:description' content='The first virtual multilingual photo exhibition dedicated to the long-standing friendship between Russia and Cuba.Over 40 historical photos, exclusive audio and video track about the conquest of space')
+	meta(property='og:image' content='https://gagarin2021.ru/img/@2x/webp/picture-1.webp')
 block title
 	- let  title= 'Цифровая выставка: 60-летию пилотируемой космонавтики посвящается'
 	title= title
@@ -86,5 +94,12 @@ block pagecontent
 					p.mb-5= deviz
 					h2!= deviztext
 		+sOnline(online)
+		+sMedia(`Медиа`,
+			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Прибытие Юрия Гагарина в&nbsp;Гавану`},
+			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Первый: Гагарин и&nbsp;Куба`},
+			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Песни тех лет`})
+		+sGreeting(`ПОЗДРАВЛЕНИЯ`,
+			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`},
+			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`})
 		+sMap(map)
 	+footer()

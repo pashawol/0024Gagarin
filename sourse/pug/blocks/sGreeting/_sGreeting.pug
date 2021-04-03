@@ -1,0 +1,18 @@
+mixin sGreeting(title, ...items)
+	// start sGreeting
+	+b.SECTION.sGreeting.section#sGreeting&attributes(attributes)
+		.container
+			+b.section-title.section-title--sm
+				h2!= title
+			+e.wrapper
+				.row.align-items-center
+					mixin item(data)
+						.col-lg-6
+							+e.item
+								+e.A.link(href=`${data.video}` data-fancybox data-caption!= data.text)
+										img.res-i(src=`../img/@2x/greeting-${data.img}` alt='')
+								+e.caption.text-center!= data.text
+					each item in items
+						+item(item)
+						
+	// end sGreeting

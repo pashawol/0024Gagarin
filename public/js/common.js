@@ -248,6 +248,21 @@ function eventHandler() {
 	}).setTween(tween3) // .setPin(".fixed-block")
 	// .addIndicators({name: "3 (duration: 0)"}) // add indicators (requires plugin)
 	.addTo(controller);
+	var mediaSlider = new Swiper('.media-slider--js', {
+		slidesPerView: 1,
+		loop: true,
+		navigation: {
+			nextEl: '.media-slider--js .swiper-button-next',
+			prevEl: '.media-slider--js .swiper-button-prev'
+		},
+		pagination: {
+			el: '.media-slider--js .swiper-pagination',
+			clickable: true,
+			renderBullet: function renderBullet(index, className) {
+				return '<span class="' + className + '">' + '</span>';
+			}
+		}
+	});
 }
 
 ;

@@ -1,0 +1,21 @@
+mixin sMedia(title, ...items)
+	// start sMedia
+	+b.SECTION.sMedia.section#sMedia&attributes(attributes)
+		.container
+			+b.section-title.section-title--sm
+				h2!= title
+			+b.media-slider--js.swiper-container
+				+e.wrapper.swiper-wrapper
+					mixin slide(data)
+						+e.slide.swiper-slide
+							+e.A.link(href=`${data.video}` data-fancybox data-caption!= data.text)
+								img.res-i(src=`../img/@2x/media-${data.img}` alt='')
+							+e.caption.text-center!= data.text
+					each item in items
+						+slide(item)
+				+e.btn.swiper-button-prev
+					span Прибытие <br> Юрия Гагарина <br> в Гавану
+				+e.btn.swiper-button-next
+					span Песни <br> тех лет
+				+e.pagination.swiper-pagination
+	// end sMedia
