@@ -261,6 +261,20 @@ function eventHandler() {
 			renderBullet: function renderBullet(index, className) {
 				return '<span class="' + className + '">' + '</span>';
 			}
+		},
+		on: {
+			init: function init(swiper) {
+				var next = $(".swiper-slide-next").data("title");
+				var prev = $(".swiper-slide-prev").data("title");
+				$(".swiper-button-next span").html(next);
+				$(".swiper-button-prev span").html(prev);
+			},
+			slideChangeTransitionEnd: function slideChangeTransitionEnd() {
+				var next = $(".swiper-slide-next").data("title");
+				var prev = $(".swiper-slide-prev").data("title");
+				$(".swiper-button-next span").html(next);
+				$(".swiper-button-prev span").html(prev);
+			}
 		}
 	});
 }

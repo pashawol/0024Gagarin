@@ -228,6 +228,23 @@ function eventHandler() {
           return '<span class="' + className + '">'+'</span>';
         },
       },
+			on: {
+				init(swiper) {
+
+					let next = $(".swiper-slide-next").data("title");
+					let prev = $(".swiper-slide-prev").data("title");
+					
+					$(".swiper-button-next span").html(next)
+					$(".swiper-button-prev span").html(prev)
+				},
+				slideChangeTransitionEnd() {
+					let next = $(".swiper-slide-next").data("title");
+					let prev = $(".swiper-slide-prev").data("title");
+
+					$(".swiper-button-next span").html(next)
+					$(".swiper-button-prev span").html(prev)
+				},
+			},
     });
 };
 

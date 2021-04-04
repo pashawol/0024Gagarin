@@ -1,3 +1,5 @@
+
+let videoLink = document.body.dataset.video
 var APP_DATA = {
   "scenes": [
     {
@@ -55,6 +57,7 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [
+      
         {
           "yaw": 1.5727793113137034,
           "pitch": -0.009332452360851562,
@@ -240,6 +243,11 @@ var APP_DATA = {
           "pitch": -0.06428181704428582,
           "title": "#el-36",
           "text": "Text"
+        },
+        {
+          "yaw": -1.3,
+          "pitch": 0.001,
+          "title": videoLink
         }
       ]
     },
@@ -302,6 +310,12 @@ var APP_DATA = {
           "yaw": -0.8681335446279306,
           "pitch": -0.061542313306338414,
           "title": "#el-17",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.2,
+          "pitch": 0.05404656610536307,
+          "title": videoLink,
           "text": "Text"
         },
         {
@@ -720,7 +734,15 @@ var APP_DATA = {
           "pitch": 0.03917459038677329,
           "title": "#el-15",
           "text": "Text"
-        }
+        },
+
+        {
+          "yaw": -1.4,
+          "pitch": 0.03917459038677329,
+          "title": videoLink,
+          "text": "Text"
+        },
+
       ]
     },
     {
@@ -791,6 +813,12 @@ var APP_DATA = {
           "text": "Text"
         },
         {
+          "yaw": -1.2,
+          "pitch": 0.047698148493218184,
+          "title": videoLink,
+          "text": "Text"
+        },
+        {
           "yaw": -0.586950356878507,
           "pitch": -0.07698140843099388,
           "title": "#el-30",
@@ -808,8 +836,9 @@ var APP_DATA = {
           "title": "#el-26",
           "text": "Text"
         },
+       
         {
-          "yaw": -0.1370829171769472,
+          "yaw": -0.14,
           "pitch": 0.05716933368206867,
           "title": "#el-15",
           "text": "Text"
@@ -979,6 +1008,12 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [
+        {
+          "yaw": -1.6126991090824912,
+          "pitch": -0.005051514782513422,
+          "title": videoLink,
+          "text": "Text"
+        },
         {
           "yaw": -0.7126991090824912,
           "pitch": -0.005051514782513422,
@@ -1220,6 +1255,12 @@ var APP_DATA = {
           "yaw": -0.9683430915797313,
           "pitch": 0.08642129182469382,
           "title": "#el-14",
+          "text": "Text"
+        },
+        {
+          "yaw": -1.3,
+          "pitch": 0.08642129182469382,
+          "title": videoLink,
           "text": "Text"
         },
         {
