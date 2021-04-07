@@ -29,16 +29,16 @@ block pagecontent
 	-
 
 		let nav= { 
-			link1: "Primero",
+			link1: "El Primero",
 			link2: "El Evento",
 			link3: "Exposición",
-			link4: "Позравления",
-			link5: "Медиа",
+			link4: "Felicidades",
+			link5: "Video",
 			link6: "Mapa",
 			}
 		let headerBlock = {
 			toptext:`DEDICADO AL SEXAGÉSIMO ANIVERSARIO DEL VUELO ESPACIAL TRIPULADO`,
-			title:`PRIMERO:<br> GAGARIN Y CUBA`,
+			title:`EL PRIMERO: <br> GAGARIN Y CUBA`,
 			text:`Basado en el álbum de fotos “Invencibles – 3, la exposición dedicada al 85 cumpleaños de Y.A. Gagarin”, 2019, SARC`,
 			picture1: 'Ю. А. Гагарин',
 			picture2: 'Ю. А. Гагарин и Эрнесто «Че» Гевара',
@@ -57,7 +57,7 @@ block pagecontent
 		let deviztext= `Solo juntos venceremos! <br> Только вместе победим!`
 		let online={
 			title: `Exposición <br> Virtual`,
-			text: `Фотографии предоставлены информационным агенством ТАСС`,
+			text: `Fotos cedidas por la agencia de noticias TASS`,
 			link: `Visita la exposición`
 		}
 		let map={
@@ -95,11 +95,11 @@ block pagecontent
 					h2!= deviztext
 		+sOnline(online)
 		+sMedia(`Медиа`,
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Прибытие Юрия Гагарина в&nbsp;Гавану`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Первый: Гагарин и&nbsp;Куба`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Песни тех лет`})
+			{img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Сanciones sobre el&nbsp;espacio&raquo;`})
+			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;El&nbsp;Primero: Gagarin and Cuba&raquo;`},
+			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;La&nbsp;visita de&nbsp;Yuri Gagarin a&nbsp;la&nbsp;Habana&raquo;`},
 		+sGreeting(`ПОЗДРАВЛЕНИЯ`,
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`})
+			{img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Felicitaciones del astronauta Arnaldo Tamayo Mendes, Cuba&raquo;`})
+			//- {img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Felicitaciones del cosmonauta Valery I. Tokarev, Rusia&raquo;`},
 		+sMap(map)
 	+footer()

@@ -548,3 +548,11 @@ iframe {
 	.hotspot-tooltip{
 		display: none !important;
 	}
+
+
+	audio{
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		bottom: 0;
+	}

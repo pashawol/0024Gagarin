@@ -10,7 +10,7 @@ mixin sGreeting(title, ...items)
 						.col-lg-6
 							+e.item
 								+e.A.link(href=`${data.video}` data-fancybox data-caption!= data.text)
-										img.res-i(src=`../img/@2x/greeting-${data.img}` alt='')
+										img.res-i(src=`${data.img}` alt='')
 								+e.caption.text-center!= data.text
 					each item in items
 						+item(item)

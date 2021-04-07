@@ -32,8 +32,8 @@ block pagecontent
 			link1: "The First",
 			link2: "Event",
 			link3: "Exposition",
-			link4: "Позравления",
-			link5: "Медиа",
+			link4: "Congratulations",
+			link5: "Video",
 			link6: "Map",
 			}
 		let headerBlock = {
@@ -57,7 +57,7 @@ block pagecontent
 		let deviztext= `Solo juntos venceremos! <br> Only together we will win! `
 		let online={
 			title: `ONLINE-EXHIBITION`,
-			text: `Фотографии предоставлены информационным агенством ТАСС`,
+			text: `All photos provided by&nbsp;TASS news agency`,
 			link: `Press to&nbsp;visit exhibition`
 		}
 		let map={
@@ -94,13 +94,13 @@ block pagecontent
 					p.mb-5= deviz
 					h2!= deviztext
 		+sOnline(online)
-		+sMedia(`Медиа`,
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Прибытие Юрия Гагарина в&nbsp;Гавану`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Первый: Гагарин и&nbsp;Куба`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Песни тех лет`})
-		+sGreeting(`Поздравления`,
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`})
+		+sMedia(`Video`,
+			{img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Space conquest songs&raquo;`})
+			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;The First: Gagarin and Cuba&raquo;`},
+			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Visit of&nbsp;Yury Gagarin to&nbsp;Havana&raquo;`},
+		+sGreeting(`Congratulations`,
+			{img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Congratulations by&nbsp;astronaut Arnaldo Tamayo Mendes, Cuba&raquo;`})
+			//- {img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Congratulations by&nbsp;astronaut Valery I. Tokarev, Russia&raquo;`},
 		+sMap(map)
 	+footer()
 
