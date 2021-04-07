@@ -33,7 +33,7 @@ block pagecontent
 			link2: "О событии",
 			link3: "Выставка",
 			link4: "Позравления",
-			link5: "Медиа",
+			link5: "Видео",
 			link6: "Где посмотреть",
 			}
 		let headerBlock = {
@@ -57,7 +57,7 @@ block pagecontent
 		let deviztext= `Solo juntos venceremos! <br> Только вместе победим!`
 		let online={
 			title: `ОНЛАЙН <br> ВЫСТАВКА`,
-			text: `Фотографии предоставлены информационным агенством ТАСС`,
+			text: `Фотографии представлены информационным агентством ТАСС`,
 			link: `Посетить выставку`
 		}
 		let media={
@@ -103,13 +103,13 @@ block pagecontent
 					p.mb-5= deviz
 					h2!= deviztext
 		+sOnline(online)
-		+sMedia(`Медиа`,
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Прибытие Юрия Гагарина в&nbsp;Гавану`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Первый: Гагарин и&nbsp;Куба`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Песни тех лет`})
-		+sGreeting(`ПОЗДРАВЛЕНИЯ`,
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`},
-			{img: `1.png`, video: `https://youtu.be/de8osKzq730`, text: `Поздравления от Евгения Теришкиного <br/> должность уважаемого человека в одну строку`})
+		+sMedia(`Видео`,
+			{img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Песни тех лет&raquo;`})
+		+sGreeting(`Поздравления`,
+			{img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Поздравления от&nbsp;космонавта В.И. Токарева, Россия&raquo;`})
+			//- {img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Поздравления от&nbsp;космонавта А.&nbsp;Тамайо Мендеса, Куба&raquo;`}
+			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Первый: Гагарин и&nbsp;Куба&raquo;`},
+			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Прибытие Юрия Гагарина в&nbsp;Гавану&raquo;`},
 		+sMap(map)
 	+footer()
 
