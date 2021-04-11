@@ -8,16 +8,16 @@ mixin sMedia(title, ...items)
 				+e.wrapper.swiper-wrapper
 					mixin slide(data)
 						+e.slide.swiper-slide(data-title= data.text)
-							+e.A.link(href=`${data.video}` data-fancybox data-caption!= data.text)
-								img.res-i(src=`${data.img}` alt='')
+							+e.A.link(href=`https://youtu.be/${data.video}` data-fancybox="media" data-caption!= data.text  title!= data.text)
+								img.res-i.swiper-lazy(src="#" data-src=`//img.youtube.com/vi/${data.video}/0.jpg` alt!= data.text)
 							+e.caption.text-center!= data.text
 					each item in items
 						+slide(item)
-				//- +e.btn.swiper-button-prev
-				//- 	span 
-				//- 	//- Прибытие <br> Юрия Гагарина <br> в Гавану
-				//- +e.btn.swiper-button-next
-				//- 	span
-				//- 	//-  Песни <br> тех лет
-				//- +e.pagination.swiper-pagination
+				+e.btn.swiper-button-prev
+					span 
+					//- Прибытие <br> Юрия Гагарина <br> в Гавану
+				+e.btn.swiper-button-next
+					span
+					//-  Песни <br> тех лет
+				+e.pagination.swiper-pagination
 	// end sMedia

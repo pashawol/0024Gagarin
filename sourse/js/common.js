@@ -216,7 +216,10 @@ function eventHandler() {
 
 		var mediaSlider = new Swiper('.media-slider--js', {
 			slidesPerView: 1,
-      loop: true,
+      loop: false,
+			lazy: {
+				loadPrevNext: true,
+			},
       navigation: {
         nextEl: '.media-slider--js .swiper-button-next',
         prevEl: '.media-slider--js .swiper-button-prev'
@@ -246,6 +249,25 @@ function eventHandler() {
 				},
 			},
     });
+
+		// function play() {
+
+
+		// 	let audio = document.querySelector('audio');
+		// 	let body = document.body;
+		// 	body.classList.add("start");
+		// 	if (!(audio) || !body.classList.contains("start") ) return;
+		// 		body.addEventListener("click ", () => {
+		// 			body.classList.add("remove")
+		// 			audio.play()
+		// 		})
+		// 		// body.addEventListener("touchstart", () => {
+		// 		// 	body.classList.add("remove")
+		// 		// 	audio.play()
+		// 		// })
+		// 	// body.addEventListener("mousemove", () => audio.play())
+		// }
+		// play();
 };
 
 if (document.readyState !== 'loading') {

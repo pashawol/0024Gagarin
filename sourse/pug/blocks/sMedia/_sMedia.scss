@@ -44,9 +44,11 @@
 			@include a-cent(y);
 			left: 5%;
 			width: 75%;
-			height: auto;
+			height: 90%;
 			margin-right: auto;
 			z-index: -1;
+			filter: saturate(0);
+			object-fit: cover;
 		}
 		&::before {
 			content: "";

@@ -16,9 +16,10 @@ block variables
 		let  bg= null
 		let la= "en"
 block title
-	- let  title= 'Цифровая выставка: 60-летию пилотируемой космонавтики посвящается'
+	- let  title= 'Virtual exposition: dedicated to the 60th anniversary of manned cosmonautics'
 	title= title
-	meta(name="description" content="о чем страница")
+	
+	meta(name="description" content="The first virtual multilingual photo exhibition dedicated to the long-standing friendship between Russia and Cuba.Over 40 historical photos, exclusive audio and video track about the conquest of space")
 	meta(name="keywords" content="exposition, expo, conference, event, digital, virtual, 3D, online, mobile, interactive, registration, accreditation, digital exposition, digital expo, digital conference, digital event, digital registration, digital accreditation, digital solutions, digital services, digital platform, virtual exposition, virtual expo, virtual conference, virtual event, virtual registration, virtual accreditation, virtual solutions, virtual services, virtual platform, 3D exposition, 3D expo, 3D conference, 3D event, 3D registration, 3D accreditation, 3D solutions, 3D services, 3D platform, online exposition, online expo, online conference, online event, online registration, online accreditation, online solutions, online services, online platform, mobile registration, mobile accreditation, interactive services, interactive solutions, registration services, registration solutions, RUVENTS, Ruvents, www.ruvents.com, DIGIDATA, DIGITEXPO, www.digitexpo.ru , photo, video, photo event, photo exposition, photo expo, photo exhibition, Yury Gagarin, Gagarin, cosmonaut, first cosmonaut, Republic of Cuba, Cuba, Havana, Revolution Square, Playa Girón, Space, The First, First in space, Russia, Russian Federation, Moscow, Vostok, Spaceship Vostok, Friendship, Russia-Cuba Friendship, Cuba - Russia Friendship, Fidel Castro, Raul Castro, Fidel, Raul, Castro, Che, Comandante, Che Guevara, Osvaldo Dorticós, 12 April, 1961, 2021, Anniversary, 60th, 60th Anniversary, RosCosmos, Mendes, Romanenko, Arnaldo Tamayo Mendes, Yury Romanenko, RODK, The Russian Society for Friendship with Cuba, www.roscuba.ru, Russian association of planetariums, Planetarium, www.apr.planetariums.ru, TASS Russian News Agency, TASS")
 	meta(property='og:title' content='Virtual exposition: dedicated to the 60th anniversary of manned cosmonautics')
 	meta(property='og:site_name' content='The first: Gagarin and Cuba')
@@ -94,12 +95,19 @@ block pagecontent
 					p.mb-5= deviz
 					h2!= deviztext
 		+sOnline(online)
-		+sMedia(`Video`,
-			{img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Space conquest songs&raquo;`})
+		
+		+sMedia(
+			`Video`
+			,{video: `_Jb4ygbzZvE`, text: `The first: Gagarin and Cuba`}
+			,{video: `GXhmyDQOTXo`, text: `Film about Gagarin's visit to Cuba`}
+			,{video: `Zw5iHw8Tw2o`, text: `&laquo;Space conquest songs&raquo;`}
+			)
 			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;The First: Gagarin and Cuba&raquo;`},
 			//- {img: `//img.youtube.com/vi/Zw5iHw8Tw2o/maxresdefault.jpg`, video: `https://youtu.be/Zw5iHw8Tw2o`, text: `&laquo;Visit of&nbsp;Yury Gagarin to&nbsp;Havana&raquo;`},
-		+sGreeting(`Congratulations`,
-			{img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Congratulations by&nbsp;astronaut Arnaldo Tamayo Mendes, Cuba&raquo;`})
+		+sGreeting(`Congratulations`
+			,{video: `eOQxdYwcsEA`, text: `&laquo;Congratulations by&nbsp;astronaut Arnaldo Tamayo Mendes, Cuba&raquo;`} 
+			,{video: `K8-79q4p0bk`, text: `&laquo;Поздравления от космонавта В.И. Токарева, Россия&raquo;`}
+			)
 			//- {img: `//img.youtube.com/vi/K8-79q4p0bk/maxresdefault.jpg`, video: `https://youtu.be/K8-79q4p0bk`, text: `&laquo;Congratulations by&nbsp;astronaut Valery I. Tokarev, Russia&raquo;`},
 		+sMap(map)
 	+footer()

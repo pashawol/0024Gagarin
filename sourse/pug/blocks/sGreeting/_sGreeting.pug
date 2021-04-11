@@ -9,8 +9,8 @@ mixin sGreeting(title, ...items)
 					mixin item(data)
 						.col-lg-6
 							+e.item
-								+e.A.link(href=`${data.video}` data-fancybox data-caption!= data.text)
-										img.res-i(src=`${data.img}` alt='')
+								+e.A.link(href=`https://youtu.be/${data.video}`  data-fancybox data-caption!= data.text title!= data.text)
+										img.res-i(src=`//img.youtube.com/vi/${data.video}/0.jpg` alt!= data.text)
 								+e.caption.text-center!= data.text
 					each item in items
 						+item(item)

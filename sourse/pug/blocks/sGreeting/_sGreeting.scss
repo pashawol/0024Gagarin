@@ -46,12 +46,14 @@
 			margin-bottom: rem(30);
 		}
 		img {
+			filter: saturate(0);
 			--b-width: #{rem(6)};
 			position: absolute;
 			top: var(--b-width);
 			left: var(--b-width);
 			width: calc(100% - var(--b-width) * 2);
 			height: calc(100% - var(--b-width) * 2);
+		object-fit: cover;
 		}
 		&::after {
 			content: "";
